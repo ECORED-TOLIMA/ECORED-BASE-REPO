@@ -1,0 +1,152 @@
+.indicador
+  &__container
+    position: relative
+    z-index: 1001
+  &--hover, &--click
+    position: absolute
+    top: 50%
+    left: 50%
+    pointer-events: none
+    z-index: 1001    
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      width: 50px
+      height: 50px
+      z-index: 1001
+      background-image: url('../assets/bullets/puntero.svg')
+    
+  &--sm
+    transform: scale(.6)
+
+  &--hover
+    &:after
+      animation: indicador-hover 5s infinite
+
+  &--click
+    &:after
+      animation: indicador-click 5s infinite
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      width: 10px
+      height: 10px
+      top: 0
+      left: 0
+      border: solid 1px $black
+      border-radius: 50%
+      animation: indicador-onda 5s infinite
+
+  &--left
+    .indicador
+      &--hover
+        &:after
+          animation: indicador-hover-left 5s infinite
+      &--click
+        &:after
+          animation: indicador-click-left 5s infinite
+
+  
+
+
+
+@keyframes indicador-hover
+  0% 
+    transform: translatex(150px)
+    opacity: 0
+  30% 
+    transform: translatex(0px)
+    opacity: 1
+  55% 
+    transform: translatex(0px)
+    opacity: 1
+  65% 
+    transform: translatex(0px)
+    opacity: 0
+  100% 
+    transform: translatex(0px)
+    opacity: 0
+
+@keyframes indicador-hover-left
+  0% 
+    transform: translatex(-150px)
+    opacity: 0
+  30% 
+    transform: translatex(0px)
+    opacity: 1
+  55% 
+    transform: translatex(0px)
+    opacity: 1
+  65% 
+    transform: translatex(0px)
+    opacity: 0
+  100% 
+    transform: translatex(0px)
+    opacity: 0
+
+
+@keyframes indicador-click
+  0% 
+    transform: translatex(150px)
+    opacity: 0
+  20% 
+    transform: translatex(0px)
+    opacity: 1
+  23% 
+    transform: scale(0.9)
+  27% 
+    transform: scale(1)
+  30% 
+    transform: translatex(0px)
+    opacity: 1
+  40% 
+    transform: translatex(0px)
+    opacity: 1
+  50% 
+    transform: translatex(0px)
+    opacity: 0
+  100% 
+    transform: translatex(0px)
+    opacity: 0
+
+@keyframes indicador-click-left
+  0% 
+    transform: translatex(-150px)
+    opacity: 0
+  20% 
+    transform: translatex(0px)
+    opacity: 1
+  23% 
+    transform: scale(0.9)
+  27% 
+    transform: scale(1)
+  30% 
+    transform: translatex(0px)
+    opacity: 1
+  40% 
+    transform: translatex(0px)
+    opacity: 1
+  50% 
+    transform: translatex(0px)
+    opacity: 0
+  100% 
+    transform: translatex(0px)
+    opacity: 0
+
+@keyframes indicador-onda
+  0% 
+    opacity: 0
+  20% 
+    transform: scale(0.5)
+    opacity: 0
+  23% 
+    transform: scale(0.5)
+    opacity: 1
+  30% 
+    transform: scale(5)
+    opacity: 0
+  100% 
+    opacity: 0
+

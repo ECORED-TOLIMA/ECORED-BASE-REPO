@@ -1,0 +1,135 @@
+input, select, textarea
+  margin: 0
+  display: block
+  font-family: $base-font-family
+  font-size: $base-font-size
+
+input
+  overflow: visible
+
+[type='color'], [type='date'], [type='datetime'], [type='datetime-local'],
+[type='email'], [type='month'], [type='number'], [type='password'],
+[type='search'], [type='tel'], [type='text'], [type='time'],
+[type='url'], [type='week'], input:not([type]),textarea, 
+select, select[multiple]
+  background-color: $form-background-color
+  border: $base-border
+  border-radius: $base-border-radius
+  box-shadow: $form-box-shadow
+  box-sizing: inherit
+  margin-bottom: $small-spacing
+  padding: $base-spacing / 3
+  transition: border-color $base-duration $base-timing
+  width: 100%
+
+  &:hover
+    border-color: shade($base-border-color, 20%)
+
+  &:focus
+    border-color: $color-acento-contenido
+    box-shadow: $form-box-shadow-focus
+    outline: none
+
+  &:disabled
+    background-color: shade($form-background-color, 5%)
+    cursor: not-allowed
+
+    &:hover
+      border: $base-border
+
+select
+  text-transform: none
+  max-width: 100%
+  border-radius: $base-border-radius
+
+::-webkit-file-upload-button
+  background-color: $color-btn-fondo
+  border: none
+  cursor: pointer
+  color: $color-btn-texto
+  border-radius: $base-border-radius
+  padding: $small-spacing $base-spacing
+  &:hover
+    background-color: $color-btn-fondo
+
+optgroup
+  font-weight: $base-bold-font-weight
+
+fieldset
+  border: $base-border
+  background-color: transparent
+  padding: $base-spacing
+  -webkit-margin-start: 0
+  -webkit-margin-end: 0
+  -webkit-padding-before: $base-spacing
+  -webkit-padding-start: $base-spacing
+  -webkit-padding-end: $base-spacing
+  -webkit-padding-after: $base-spacing
+
+
+legend
+  box-sizing: border-box
+  color: inherit
+  display: table
+  max-width: 100%
+  padding: 0
+  white-space: normal
+  font-weight: 600
+  margin-bottom: $small-spacing / 2
+
+  -webkit-padding-start: 0
+  -webkit-padding-end: 0
+
+
+label
+  display: block
+  font-size: $label-font-size
+  font-family: $label-font-family
+  font-weight: $label-font-weight
+  margin-bottom: $small-spacing / 2
+
+textarea
+  overflow: auto
+  resize: vertical
+
+[type="checkbox"], [type="radio"]
+  box-sizing: border-box
+  padding: 0
+  display: inline
+  margin-right: $small-spacing / 2
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button
+  height: auto
+
+[type="search"]
+  -webkit-appearance: textfield
+  outline-offset: -2px
+
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration
+  -webkit-appearance: none
+  -moz-appearance: none
+
+::placeholder
+  color: $placeholder-color
+
+::-webkit-file-upload-button
+  -webkit-appearance: button
+  -moz-appearance: button
+  font: inherit
+
+[type="file"]
+  margin-bottom: $small-spacing
+  width: 100%
+
+button,[type="button"],[type="reset"],[type="submit"]
+  -webkit-appearance: button
+
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner
+  border-style: none
+  padding: 0
+
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring
+  outline: 1px dotted ButtonText
+
+progress
+  vertical-align: baseline

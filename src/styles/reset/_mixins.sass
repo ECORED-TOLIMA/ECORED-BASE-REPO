@@ -1,0 +1,5 @@
+@function textColor($color)
+  @if (lightness($color) > 50)
+    @return $color-tipografia
+  @else
+    @return $white

@@ -1,0 +1,93 @@
+.app
+
+.contenedor-principal
+  display: flex
+  align-items: flex-start
+
+.seccion-principal
+  width: 100%
+
+  &--barra-avance-open
+    .curso-main-container
+      padding-bottom: 80px !important
+  
+.insignia
+  display: inline-block
+  color: $white
+  background-color: $color-acento-contenido
+  border-radius: 0.5em
+  padding: 5px
+  line-height: 1em
+
+
+.tarjeta__template
+  &--azul-claro
+    background-color: $color-sistema-g
+
+.titulo
+  &__template
+    &--a
+      position: relative
+      padding-left: 20px
+      span
+        line-height: 1.1em
+      &::before
+        content: ''
+        display: block
+        width: 4px
+        background-color: $color-acento-contenido
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        border-radius: 2px
+
+
+
+.container, .container-fluid
+  position: relative
+
+.curso-main-container
+  min-height: 100vh
+  background-color: $color-sistema-g
+
+  &> .container
+    overflow-x: hidden
+
+  &::after
+    content: ''
+    display: block
+    height: 1px
+
+hr
+  border-color: $color-sistema-c
+
+.video
+  width: 100%
+  border-radius: 10px
+
+
+// bootstrap override
+.carousel-control-next, .carousel-control-prev
+  background-color: transparent
+  border-radius: 0
+
+
+.separador-container
+  padding: 45px 0
+.separador
+  height: 20px
+  overflow: hidden
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 50%
+    display: block
+    background-color: $lighter-gray
+    width: 40%
+    height: 15px
+    filter: blur(5px)
+    transform: translate(-50%, -50%)
+    border-radius: 50%

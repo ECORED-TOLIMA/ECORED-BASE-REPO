@@ -1,0 +1,164 @@
+.audio
+  width: 34px
+  height: 34px
+  display: flex
+  align-items: center
+  justify-content: center
+  &__btn
+    border-radius: 50%
+    width: 100%
+    display: block
+    padding: 0
+    transition-property: background-color, transform
+    transition-duration: 0.2s
+    &:hover
+      transform: scale(1.1)
+  .spinner-border
+    border-right-color: transparent !important
+
+.audio, .tarjeta-audio, .tarjeta-dialogo
+  &.color-primario
+    .audio__btn
+      background-color: $color-primario
+      &:hover
+        background-color: darken($color-primario,10%)
+    .spinner-border
+      border-color: $color-primario
+  &.color-secundario
+    .audio__btn
+      background-color: $color-secundario
+      &:hover
+        background-color: darken($color-secundario,10%)
+    .spinner-border
+      border-color: $color-secundario
+  &.color-acento-contenido
+    .audio__btn
+      background-color: $color-acento-contenido
+      &:hover
+        background-color: darken($color-acento-contenido,10%)
+    .spinner-border
+      border-color: $color-acento-contenido
+  &.color-acento-botones
+    .audio__btn
+      background-color: $color-acento-botones
+      &:hover
+        background-color: darken($color-acento-botones,10%)
+    .spinner-border
+      border-color: $color-acento-botones
+  &.color-adicional-1
+    .audio__btn
+      background-color: $color-adicional-1
+      &:hover
+        background-color: darken($color-adicional-1,10%)
+    .spinner-border
+      border-color: $color-adicional-1
+  &.color-adicional-2
+    .audio__btn
+      background-color: $color-adicional-2
+      &:hover
+        background-color: darken($color-adicional-2,10%)
+    .spinner-border
+      border-color: $color-adicional-2
+
+.tarjeta-audio
+  border: 2px solid
+  padding: 0.65em 0.7em 0.7em 1.5em
+  border-radius: 30px
+  min-height: 60px
+
+  &__input
+    input[type=range]
+      -webkit-appearance: none
+      cursor: ew-resize
+      border: none
+      width: 100%
+      border-radius: 5px
+      background-repeat: no-repeat !important
+      height: 4px
+      &::-webkit-slider-runnable-track
+        -webkit-appearance: none
+        height: 4px
+      &::-webkit-slider-thumb
+        -webkit-appearance: none
+        width: 10px
+        height: 10px
+        margin-top: -3px
+        border-radius: 50%
+      &::-moz-range-thumb
+        -webkit-appearance: none
+        width: 10px
+        height: 10px
+        border: none
+  &__tiempo
+    font-weight: bold
+    line-height: 1.1em
+    display: flex
+    justify-content: space-between
+
+  &.color-primario
+    border-color: $color-primario
+    .tarjeta-audio__texto
+      color: $color-primario
+    .tarjeta-audio__input
+      input[type=range]
+        background: rgba($color-primario, 0.2)
+        background-image: linear-gradient($color-primario, $color-primario)
+        &::-webkit-slider-runnable-track
+          background: rgba($color-primario, 0.2)
+        &::-webkit-slider-thumb
+          background-color: $color-primario
+        &::-moz-range-thumb
+          background-color: $color-primario
+    .tarjeta-audio__tiempo
+      color: $color-primario
+
+  &.color-secundario
+    border-color: $color-secundario
+    .tarjeta-audio__texto
+      color: $color-secundario
+    .tarjeta-audio__input
+      input[type=range]
+        background: rgba($color-secundario, 0.2)
+        &::-webkit-slider-runnable-track
+          background: rgba($color-secundario, 0.2)
+        &::-webkit-slider-thumb
+          background-color: $color-secundario
+        &::-moz-range-thumb
+          background-color: $color-secundario
+          background-image: linear-gradient($color-secundario, $color-secundario)
+    .tarjeta-audio__tiempo
+      color: $color-secundario
+
+  &.color-acento-contenido
+    border-color: $color-acento-contenido
+    .tarjeta-audio__texto
+      color: $color-acento-contenido
+    .tarjeta-audio__input
+      input[type=range]
+        background: rgba($color-acento-contenido, 0.2)
+        &::-webkit-slider-runnable-track
+          background: rgba($color-acento-contenido, 0.2)
+        &::-webkit-slider-thumb
+          background-color: $color-acento-contenido
+        &::-moz-range-thumb
+          background-color: $color-acento-contenido
+          background-image: linear-gradient($color-acento-contenido, $color-acento-contenido)
+    .tarjeta-audio__tiempo
+      color: $color-acento-contenido
+
+  &.color-acento-botones
+    border-color: $color-acento-botones
+    .tarjeta-audio__texto
+      color: $color-acento-botones
+    .tarjeta-audio__input
+      input[type=range]
+        background: rgba($color-acento-botones, 0.2)
+        &::-webkit-slider-runnable-track
+          background: rgba($color-acento-botones, 0.2)
+        &::-webkit-slider-thumb
+          background-color: $color-acento-botones
+        &::-moz-range-thumb
+          background-color: $color-acento-botones
+          background-image: linear-gradient($color-acento-botones, $color-acento-botones)
+    .tarjeta-audio__tiempo
+      color: $color-acento-botones

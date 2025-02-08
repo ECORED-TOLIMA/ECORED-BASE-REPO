@@ -1,0 +1,244 @@
+.tabs-a
+  &__tab
+    display: block
+    width: 100%
+    text-align: left
+    background-color: $color-sistema-e
+    padding: 15px 20px
+    border-radius: 5px
+    color: $color-sistema-a
+    line-height: 1.2em
+    &__text
+      overflow: hidden
+      text-overflow: ellipsis
+    &:last-child
+      margin-bottom: 0 !important
+    &:hover, &:active, &:focus
+      color: $color-sistema-a
+
+    &__selected
+      font-weight: $base-bold-font-weight
+      
+      @media (min-width: $bp-min-lg)
+        position: relative
+        &:before
+          content: ''
+          display: block
+          position: absolute
+          right: 0
+          top: 50%
+          width: 15px
+          height: 15px
+          transform: translate(5px,-50%)  rotate(45deg)
+          background-color: $color-acento-botones
+
+  &__content-item
+    opacity: 0
+    &--active
+      animation: tab-content-active 0.5s ease-in-out forwards
+
+  &.color-primario
+    .tabs-a__tab
+      &:hover, &:active, &:focus
+        background-color: $color-primario
+        color: textColor($color-primario)
+      &__selected
+        background-color: $color-primario
+        color: textColor($color-primario)
+        &:before
+          background-color: $color-primario
+  &.color-secundario
+    .tabs-a__tab
+      &:hover, &:active, &:focus
+        background-color: $color-secundario
+        color: textColor($color-secundario)
+      &__selected
+        background-color: $color-secundario
+        color: textColor($color-secundario)
+        &:before
+          background-color: $color-secundario
+  &.color-acento-contenido
+    .tabs-a__tab
+      &:hover, &:active, &:focus
+        background-color: $color-acento-contenido
+        color: textColor($color-acento-contenido)
+      &__selected
+        background-color: $color-acento-contenido
+        color: textColor($color-acento-contenido)
+        &:before
+          background-color: $color-acento-contenido
+  &.color-acento-botones
+    .tabs-a__tab
+      &:hover, &:active, &:focus
+        background-color: $color-acento-botones
+        color: textColor($color-acento-botones)
+      &__selected
+        background-color: $color-acento-botones
+        color: textColor($color-acento-botones)
+        &:before
+          background-color: $color-acento-botones
+
+@keyframes tab-content-active
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+
+.tabs-b
+  border-bottom: 1px solid #AFAFAF
+  &__header
+  &__tab
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 20px
+    background-color: $color-sistema-h
+    border-right: 2px solid #AFAFAF
+    border-bottom: 2px solid #AFAFAF
+    cursor: pointer
+
+    &:active, &:focus, &:hover
+      background-color: $color-sistema-f
+
+    &:last-child
+      border-right: none
+    &__icon
+      width: 50px
+      margin-bottom: 20px
+    &__title
+      text-align: center
+      font-size: $h6-font-size
+      line-height: 1.1em
+      display: flex
+      height: 100%
+      align-items: center
+
+    &--active
+      background-color: transparent
+      border-top: 5px solid !important
+      border-bottom: none
+      &:active, &:focus, &:hover
+        background-color: transparent
+      .tabs-b__tab__title
+        font-weight: $base-bold-font-weight
+
+    @media (min-width: $bp-min-sm) and (max-width: $bp-max-md)
+      border-top: 2px solid #AFAFAF
+      &:first-child
+        border-left: 2px solid #AFAFAF
+      &:last-child
+        border-right: 2px solid #AFAFAF
+      &:nth-child(4)
+        border-left: 2px solid #AFAFAF
+      &:nth-child(n+4)
+        border-top: none
+      &--active
+        &:nth-child(-n+3)
+          border-bottom: 2px solid #AFAFAF
+
+    @media (max-width: $bp-max-xs)
+      &:last-child
+        border-right: 2px solid #AFAFAF
+      &:nth-child(-n+2)
+        border-top: 2px solid #AFAFAF
+      &:nth-child(odd)
+        border-left: 2px solid #AFAFAF
+
+  &__content-item
+
+  &.color-primario
+    .tabs-b__tab--active
+      border-top-color: $color-primario !important
+  &.color-secundario
+    .tabs-b__tab--active
+      border-top-color: $color-secundario !important
+  &.color-acento-contenido
+    .tabs-b__tab--active
+      border-top-color: $color-acento-contenido !important
+  &.color-acento-botones
+    .tabs-b__tab--active
+      border-top-color: $color-acento-botones !important
+
+.tabs-c
+  border-bottom: 1px solid #AFAFAF
+  &__header
+    margin-bottom: 15px
+  &__tab
+    border-bottom: 4px solid $color-sistema-f
+    line-height: $heading-line-height
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    &:after, &:before
+      content: ''
+      display: block
+      position: absolute
+      transform: translate(-50%,-50%)
+    &:after
+      width: 2px
+      height: 20px
+      top: 50%
+      right: -2px
+      background-color: $color-sistema-f
+    &:last-child
+      &:after
+        display: none
+
+
+    @media (min-width: $bp-min-lg) and (max-width: $bp-max-lg)
+      &:nth-child(3n)
+        &:after
+          display: none
+    @media (min-width: $bp-min-sm) and (max-width: $bp-max-md)
+      &:nth-child(2n)
+        &:after
+          display: none
+    @media (max-width: $bp-max-xs)
+      &:after
+        display: none
+
+    &--active
+      border-bottom: 4px solid !important
+      &:before
+        width: 0
+        height: 0
+        border-left: 10px solid transparent
+        border-right: 10px solid transparent
+        border-top: 10px solid
+        left: 50%
+        top: calc(100% + 6px)
+
+      &:active, &:focus, &:hover
+        background-color: transparent
+      .tabs-b__tab__title
+        font-weight: $base-bold-font-weight
+
+  &.color-primario
+    .tabs-c__tab--active
+      border-bottom-color: $color-primario !important
+      &:before
+        border-top-color: $color-primario
+  &.color-secundario
+    .tabs-c__tab--active
+      border-bottom-color: $color-secundario !important
+      &:before
+        border-top-color: $color-secundario
+  &.color-acento-contenido
+    .tabs-c__tab--active
+      border-bottom-color: $color-acento-contenido !important
+      &:before
+        border-top-color: $color-acento-contenido
+  &.color-acento-botones
+    .tabs-c__tab--active
+      border-bottom-color: $color-acento-botones !important
+      &:before
+        border-top-color: $color-acento-botones
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity .5s
+
+.fade-enter, .fade-leave-to
+  opacity: 0

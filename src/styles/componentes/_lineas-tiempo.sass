@@ -1,0 +1,632 @@
+
+.linea-tiempo-a
+  position: relative
+  padding: 30px 0
+
+  &__row
+    display: flex
+    align-items: center
+    margin-bottom: 90px
+    position: relative
+    cursor: pointer
+
+    &::before, &::after
+      content: ''
+      display: block
+      top: 50%
+      left: 50%
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      position: absolute
+      transform: translate(-50%,-50%)
+
+    &::after
+      width: 20px
+      height: 20px
+      background: $color-sistema-d
+
+    &:nth-child(even)
+      flex-direction: row-reverse
+
+      .linea-tiempo-a
+
+        &__content
+          text-align: left
+
+        &__text
+          align-items: flex-start
+          margin-right: 0
+          margin-left: 80px
+
+        &__icon
+          justify-content: flex-end
+
+          &__container
+            margin-left: 0
+            margin-right: 50px
+
+            &::before
+              left: auto
+              right: 0
+              transform: translate(35%,-50%) rotate(45deg)
+
+      &:hover
+        .linea-tiempo-a__icon__container
+          transform: scale(1.3) translateX(-15px)
+        .linea-tiempo-a__text
+          transform: translateX(-30px)
+
+    &:hover
+      .linea-tiempo-a__icon__container
+        transform: scale(1.3) translateX(15px)
+      .linea-tiempo-a__text
+        transform: translateX(30px)
+
+    &:last-child
+      margin-bottom: 0
+
+  &__content
+    width: 50%
+    text-align: right
+
+    span
+      display: block
+      margin: 0
+      max-width: 250px
+      line-height: 1.1em
+
+  &__text
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin-right: 80px
+    transition: transform 0.3s ease-in-out
+
+  &__icon
+    display: flex
+
+    &__container
+      position: relative
+      width: 130px
+      height: 130px
+      background: $color-acento-contenido
+      border-radius: 50%
+      margin-left: 50px
+      transition: transform 0.3s ease-in-out
+      display: flex
+      justify-content: center
+      align-items: center
+
+      &::before
+        content: ''
+        display: block
+        top: 50%
+        left: 0
+        width: 30px
+        height: 30px
+        position: absolute
+        background: $color-acento-contenido
+        transform: translate(-35%,-50%) rotate(45deg)
+
+      span
+        position: relative
+        text-align: center
+        font-weight: 900
+
+    img
+      width: 60px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+
+
+  &::before
+    content: ''
+    display: block
+    top: 0
+    left: 50%
+    width: 10px
+    height: 100%
+    border-radius: 5px
+    position: absolute
+    background: $color-sistema-d
+    transform: translate(-50%,0)
+
+  @media screen and (max-width: 768px)
+    &__row
+      &:nth-child(even)
+        .linea-tiempo-a
+          &__text
+            margin-left: 40px
+        &:hover
+          .linea-tiempo-a__icon__container
+            transform: scale(1.3) translateX(-5px)
+          .linea-tiempo-a__text
+            transform: translateX(-10px)
+      &:hover
+        .linea-tiempo-a__icon__container
+          transform: scale(1.3) translateX(5px)
+        .linea-tiempo-a__text
+          transform: translateX(10px)
+    &__text
+      margin-right: 40px
+
+  @media screen and (max-width: 450px)
+    &__content
+      span
+        font-size: 16px
+    &__icon
+
+      &__container
+        width: 100px
+        height: 100px
+
+        span
+          font-size: 16px
+
+      &__inner
+        width: 100%
+        height: 100%
+
+        &::after
+          width: 70px
+          height: 70px
+
+      img
+        width: 40px
+
+  &.color-primario
+    .linea-tiempo-a__row
+      &::before
+        background-color: $color-primario
+    .linea-tiempo-a__icon__container
+      background-color: $color-primario
+      color: textColor($color-primario)
+      &::before
+        background-color: $color-primario
+  &.color-secundario
+    .linea-tiempo-a__row
+      &::before
+        background-color: $color-secundario
+    .linea-tiempo-a__icon__container
+      background-color: $color-secundario
+      color: textColor($color-secundario)
+      &::before
+        background-color: $color-secundario
+  &.color-acento-contenido
+    .linea-tiempo-a__row
+      &::before
+        background-color: $color-acento-contenido
+    .linea-tiempo-a__icon__container
+      background-color: $color-acento-contenido
+      color: textColor($color-acento-contenido)
+      &::before
+        background-color: $color-acento-contenido
+  &.color-acento-botones
+    .linea-tiempo-a__row
+      &::before
+        background-color: $color-acento-botones
+    .linea-tiempo-a__icon__container
+      background-color: $color-acento-botones
+      color: textColor($color-acento-botones)
+      &::before
+        background-color: $color-acento-botones
+
+
+.linea-tiempo-b
+  position: relative
+
+  &__icon
+    padding-top: 100%
+    border-radius: 50%
+    position: relative
+    &:after
+      content: ''
+      display: block
+      width: 15px
+      height: 4px
+      position: absolute
+      left: 100%
+      top: 50%
+      transform: translateY(-50%)
+    img
+      position: absolute
+      width: 80%
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+
+  &__row
+    margin-bottom: 50px
+    &:last-child
+      margin-bottom: 0
+    @media (min-width: $bp-min-md)
+      &:nth-child(odd)
+        flex-direction: row-reverse
+
+        .linea-tiempo-b__content
+          text-align: right
+
+        .linea-tiempo-b__icon
+          &:after
+            right: 100%
+            left: auto
+
+  &__line-row
+  &__line
+    margin-left: calc(50% - 2px)
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      border-left: 4px dotted $color-sistema-b
+      top: 0
+      bottom: 0
+
+  &.color-primario
+    .linea-tiempo-b__icon
+      background-color: $color-primario
+      &:after
+        background-color: $color-primario
+  &.color-secundario
+    .linea-tiempo-b__icon
+      background-color: $color-secundario
+      &:after
+        background-color: $color-secundario
+  &.color-acento-contenido
+    .linea-tiempo-b__icon
+      background-color: $color-acento-contenido
+      &:after
+        background-color: $color-acento-contenido
+  &.color-acento-botones
+    .linea-tiempo-b__icon
+      background-color: $color-acento-botones
+      &:after
+        background-color: $color-acento-botones
+
+.linea-tiempo-c
+  display: flex
+  flex-direction: column
+  &__header
+    display: flex
+    align-items: center
+    &__items
+      display: flex
+      flex: auto
+      .horizontal-scroll
+        align-items: flex-end !important
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      cursor: pointer
+
+      &__year
+        line-height: 1.1em
+        text-align: center
+        margin-bottom: 10px
+
+      &__line-container
+        width: 100%
+        display: flex
+        align-items: center
+
+        &:after, &:before
+          content: ''
+          display: block
+          width: 50%
+          height: 3px
+          background-color: $lighter-gray
+
+      &__dot
+        min-width: 20px
+        max-width: 20px
+        min-height: 20px
+        max-height: 20px
+        border: 3px solid $lighter-gray
+        // background-color: $color-sistema-f
+        border-radius: 50%
+
+      &--active
+        .linea-tiempo-c__header__item
+          &__year
+            font-weight: $base-black-font-weight
+          &__line-container
+            &:before
+              background-color: $color-acento-contenido
+          &__dot
+            border-color: $color-acento-contenido
+            position: relative
+            &:after
+              content: ''
+              display: block
+              width: 9px
+              height: 9px
+              background-color: $color-acento-contenido
+              border-radius: 50%
+              position: absolute
+              left: 50%
+              top: 50%
+              transform: translate(-50%, -50%)
+
+
+      &--before
+        .linea-tiempo-c__header__item
+          &__line-container
+            &:before, &:after
+              background-color: $color-acento-contenido
+          &__dot
+            border-color: $color-acento-contenido
+
+      &:first-child
+        .linea-tiempo-c__header__item__line-container
+          &:before
+            background-color: transparent !important
+
+      &:last-child
+        .linea-tiempo-c__header__item__line-container
+          &:after
+            background-color: transparent !important
+
+
+    &__btn
+      min-width: 50px
+      max-width: 50px
+      min-height: 50px
+      max-height: 50px
+      flex: auto
+      border-radius: 50%
+      border: 2px solid $lighter-gray
+      background-color: $white
+      position: relative
+      cursor: pointer
+      transition: border-color 0.2s ease-in-out
+      i
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-45%, -45%)
+        // color: $lighten-gray
+        font-size: 1.3em
+        display: block
+        line-height: 1em
+      &:hover
+        border-color: $color-acento-contenido
+
+
+      &--left, &--right
+        @extend .linea-tiempo-c__header__btn
+
+  @media (max-width: $bp-max-sm)
+    &__header
+      &__items
+        flex-wrap: wrap
+        justify-content: center
+      &__item
+        flex: none
+        min-width: 25%
+        margin-bottom: 10px
+  @media (max-width: $bp-max-xs)
+    &__header
+      &__btn
+        min-width: 30px
+        max-width: 30px
+        min-height: 30px
+        max-height: 30px
+
+  &.color-primario
+    .linea-tiempo-c__header__item--active
+      .linea-tiempo-c__header__item
+        &__line-container
+          &:before
+            background-color: $color-primario
+        &__dot
+          border-color: $color-primario
+          &:after
+            background-color: $color-primario
+    .linea-tiempo-c__header__item--before
+      .linea-tiempo-c__header__item
+        &__line-container
+          &:before, &:after
+            background-color: $color-primario
+        &__dot
+          border-color: $color-primario
+
+  &.color-secundario
+    .linea-tiempo-c__header__item--active
+      .linea-tiempo-c__header__item
+        &__line-container
+          &:before
+            background-color: $color-secundario
+        &__dot
+          border-color: $color-secundario
+          &:after
+            background-color: $color-secundario
+    .linea-tiempo-c__header__item--before
+      .linea-tiempo-c__header__item
+        &__line-container
+          &:before, &:after
+            background-color: $color-secundario
+        &__dot
+          border-color: $color-secundario
+  &.color-acento-contenido
+    .linea-tiempo-c__header__item--active
+      .linea-tiempo-c__header__item
+        &__line-container
+          &:before
+            background-color: $color-acento-contenido
+        &__dot
+          border-color: $color-acento-contenido
+          &:after
+            background-color: $color-acento-contenido
+    .linea-tiempo-c__header__item--before
+      .linea-tiempo-c__header__item
+        &__line-container
+          &:before, &:after
+            background-color: $color-acento-contenido
+        &__dot
+          border-color: $color-acento-contenido
+  &.color-acento-botones
+    .linea-tiempo-c__header__item--active
+      .linea-tiempo-c__header__item
+        &__line-container
+          &:before
+            background-color: $color-acento-botones
+        &__dot
+          border-color: $color-acento-botones
+          &:after
+            background-color: $color-acento-botones
+    .linea-tiempo-c__header__item--before
+      .linea-tiempo-c__header__item
+        &__line-container
+          &:before, &:after
+            background-color: $color-acento-botones
+        &__dot
+          border-color: $color-acento-botones
+
+  .indicador__container
+    transform: translateY(10px)
+
+.linea-tiempo-d
+  &__item
+    &--selected
+      .linea-tiempo-d
+        &__item
+          &__content
+            &__title
+              font-weight: $base-bold-font-weight
+          &__number
+            font-weight: $base-bold-font-weight
+    &__col-number
+      display: flex
+      flex-direction: column
+
+    &__dots
+      flex: 1
+      display: flex
+      justify-content: center
+      padding: 5px 0
+      &:after
+        content: ''
+        display: block
+        width: 0
+        height: 100%
+        border-left: 5px dotted $color-sistema-e
+    &__number
+      display: flex
+      align-items: center
+      justify-content: center
+      min-width: 40px
+      height: 40px
+      cursor: pointer
+      transition: background-color .3s ease-in-out, color .3s ease-in-out
+    &__content
+      &__title
+        display: flex
+        align-items: center
+        height: 40px
+        cursor: pointer
+        &:hover
+          font-weight: $base-bold-font-weight
+      &__slot
+        overflow: hidden
+        transition: height .5s ease-in-out
+  .tarjeta
+    border-radius: 5px
+
+  &.color-primario
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__number
+        background-color: $color-primario
+        color: textColor($color-primario)
+  &.color-secundario
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__number
+        background-color: $color-secundario
+        color: textColor($color-secundario)
+  &.color-acento-contenido
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__number
+        background-color: $color-acento-contenido
+        color: textColor($color-acento-contenido)
+  &.color-acento-botones
+    .linea-tiempo-d__item--selected
+      .linea-tiempo-d__item__number
+        background-color: $color-acento-botones
+        color: textColor($color-acento-botones)
+
+.linea-tiempo-e
+  width: 100%
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 0px
+    bottom: 0px
+    left: 25%
+    width: 5px
+    background: #ddd
+    transform: translateX(-50%)
+
+  &__item
+    display: flex
+    position: relative
+    padding: 25px 0
+    &__header
+      margin-bottom: .5em
+      width: 25%
+      padding-right: 30px
+      text-align: right
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        border: 5px solid 
+        background-color: $white
+        top: 20px
+        right: -20px
+        z-index: 99
+        transform: translateX(-50%)
+
+    &__body
+      width: 75%
+      padding-left: 30px
+
+  @media (max-width: $bp-max-xs)
+    &:before
+      display: none
+    .linea-tiempo-e
+      &__item
+        flex-direction: column
+        &__header
+          width: 100%
+          text-align: left
+          padding: 0
+          margin-bottom: 15px
+          &:before
+            display: none
+        &__body
+          width: 100%
+          padding: 0
+
+  &.color-primario
+    .linea-tiempo-e__item__header
+      &:before
+        border-color: $color-primario
+  &.color-secundario
+    .linea-tiempo-e__item__header
+      &:before
+        border-color: $color-secundario
+  &.color-acento-contenido
+    .linea-tiempo-e__item__header
+      &:before
+        border-color: $color-acento-contenido
+  &.color-acento-botones
+    .linea-tiempo-e__item__header
+      &:before
+        border-color: $color-acento-botones

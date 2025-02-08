@@ -1,0 +1,169 @@
+.slyder-a
+  position: relative
+  &__btn
+    &--sigt, &--atrs
+      width: 50px
+      height: 50px
+      background-color: $white
+      border-radius: 50%
+      background-image: url('../assets/bullets/arrow.svg')
+      background-repeat: no-repeat
+      background-size: 16px 24px
+      background-position: center
+      border: 1px solid $color-sistema-e
+      top: 50%
+      z-index: 10000
+      opacity: 0.7
+      box-shadow: 0 0 0px 0px rgba(0,0,0,0.3)
+      transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+      cursor: pointer
+      &:hover
+        opacity: 1
+        box-shadow: 0 0 5px 0px rgba(0,0,0,0.3)
+        border-color: $white
+
+  &__bullets
+    display: flex
+    z-index: 10000
+    &__item
+      width: 15px
+      height: 15px
+      background-color: $white
+      border-radius: 50%
+      box-shadow: 0 0 5px 0px rgba(0,0,0,0)
+      margin: 0 10px
+      cursor: pointer
+      opacity: 0.7
+      transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out
+      border: 1px solid $color-sistema-e
+
+      &--active
+        background-color: $color-sistema-b
+        border-color: $color-sistema-b
+        opacity: 1
+
+      &:hover
+        opacity: 1
+        box-shadow: 0 0 5px 0px rgba(0,0,0,0.3)
+        border-color: $color-sistema-b
+
+  &__tipo-a
+    position: absolute
+    inset: 0
+    .slyder-a
+      &__btn
+        &--sigt, &--atrs
+          position: absolute
+        &--sigt
+          transform: translateY(-50%) rotate(-90deg)
+          right: 15px
+          .indicador__container
+            transform: translateY(15px) rotate(90deg)
+
+        &--atrs
+          transform: translateY(-50%) rotate(90deg)
+          left: 15px
+
+      &__bullets
+        position: absolute
+        bottom: 50px
+        left: 50%
+        transform: translateX(-50%)
+
+  &__tipo-b
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .slyder-a
+      &__btn
+        &--sigt
+          transform: rotate(-90deg)
+          right: 15px
+          .indicador__container
+            transform: rotate(90deg)
+
+        &--atrs
+          transform: rotate(90deg)
+          left: 15px
+
+      &__bullets
+        position: relative
+
+    .hide
+      opacity: 0
+      pointer-events: none
+
+.slyder-b
+  &__img
+    border-radius: 10px
+    overflow: hidden
+
+.slyder-c
+  &__img
+    border-radius: 10px
+    overflow: hidden
+  &__content
+    &__header
+      align-items: center
+      justify-content: space-between
+
+  .indicador__container
+    transform: translateX(-15px)
+
+.slyder-d
+  &__imagen
+    position: relative
+  &__content
+    position: absolute
+    bottom: 0
+    &__card
+      background-color: $white
+
+    @media (max-width: $bp-max-sm)
+      position: relative
+
+  .indicador__container
+    transform: translateY(5px)
+
+.slyder
+  &__action
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  &__pagination
+  &__btn
+    display: block
+    width: 30px
+    height: 30px
+    position: relative
+    background-color: $color-sistema-f
+    margin-left: 15px
+    i
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+
+    &:hover
+      background-color: $color-sistema-c
+
+.slyder-f
+  display: flex
+  &__main
+    width: 84%
+    .horizontal-scroll
+      align-items: stretch !important
+
+  &__btn
+    width: 8%
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    i
+      font-size: 4rem
+
+  &__slyde
+    & > .tarjeta
+      height: 100%

@@ -1,0 +1,65 @@
+a
+  cursor: pointer
+
+p
+  a
+    text-decoration: underline
+
+.boton
+  background-color: $color-btn-fondo
+  color: $color-btn-texto
+  padding: 10px 15px
+  border-radius: $base-border-radius
+  display: inline-block
+  display: inline-flex
+  align-items: center
+  transform: scale(1)
+
+  *
+    color: $color-btn-texto
+
+  span + i
+    margin-left: 8px
+
+  &:active, &:focus, &:hover
+    background-color: $color-btn-fondo
+    transform: scale(1.05)
+    *
+      color: $color-btn-texto
+
+  &--sm
+    @extend .boton
+    padding: 5px 10px
+
+  &.color-primario
+    background-color: $color-primario
+    *
+      color: textColor($color-primario)
+    &:active, &:focus, &:hover
+      background-color: $color-primario
+      *
+        color: textColor($color-primario)
+  &.color-secundario
+    background-color: $color-secundario
+    *
+      color: textColor($color-secundario)
+    &:active, &:focus, &:hover
+      background-color: $color-secundario
+      *
+        color: textColor($color-secundario)
+  &.color-acento-contenido
+    background-color: $color-acento-contenido
+    *
+      color: textColor($color-acento-contenido)
+    &:active, &:focus, &:hover
+      background-color: $color-acento-contenido
+      *
+        color: textColor($color-acento-contenido)
+  &.color-acento-botones
+    background-color: $color-acento-botones
+    *
+      color: textColor($color-acento-botones)
+    &:active, &:focus, &:hover
+      background-color: $color-acento-botones
+      *
+        color: textColor($color-acento-botones)

@@ -1,0 +1,41 @@
+.zoom
+  position: relative
+  &__img
+    cursor: crosshair
+    position: relative
+  &__lens
+    background: #fff
+    border-radius: 50%
+    position: absolute
+    border: 2px solid white
+    pointer-events: none
+    transition: transform .25s ease-in-out, opacity .2s ease
+    opacity: 0
+    transform-origin: 50% 50%
+    overflow: hidden
+    z-index: 100
+
+    &:before
+      content: ''
+      position: absolute
+      margin: auto
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      border-radius: 50%
+      display: none
+
+    img
+      position: absolute
+      left: 0
+      top: 0
+      transition: opacity .25s ease
+      display: initial
+      width: auto
+      max-width: initial
+
+    &.show
+      opacity: 1

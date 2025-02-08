@@ -1,0 +1,297 @@
+.tarjeta
+  border-radius: 20px
+
+  &--container
+    & > .tarjeta
+      border-radius: 0
+      &:first-child
+        border-top-left-radius: 20px
+        border-bottom-left-radius: 20px
+      &:last-child
+        border-top-right-radius: 20px
+        border-bottom-right-radius: 20px
+
+  &--blanca
+    background-color: $white
+
+  &--gris
+    background-color: $color-sistema-h
+
+  &--azul
+    background-color: $color-sistema-e
+
+  &--boton
+    border-radius: 20px
+    background-color: $color-sistema-h
+    cursor: pointer
+    transition: background-color 0.3s ease-in-out
+
+    &.color-primario
+      &:active, &:focus, &:hover
+        background-color: $color-primario
+        *
+          color: textColor($color-primario)
+    &.color-secundario
+      &:active, &:focus, &:hover
+        background-color: $color-secundario
+        *
+          color: textColor($color-secundario)
+    &.color-acento-contenido
+      &:active, &:focus, &:hover
+        background-color: $color-acento-contenido
+        *
+          color: textColor($color-acento-contenido)
+    &.color-acento-botones
+      &:active, &:focus, &:hover
+        background-color: $color-acento-botones
+        *
+          color: textColor($color-acento-botones)
+
+  &--tabla
+    background-color: $color-sistema-e
+    &:nth-child(even)
+      background-color: $color-sistema-g
+
+  &.color-primario
+    background-color: $color-primario
+    *
+      color: textColor($color-primario)
+    &--borde
+      background-color: lighten($color-primario, 50%)
+      color: textColor(lighten($color-primario, 50%))
+      border: solid 4px $color-primario
+  &.color-secundario
+    background-color: $color-secundario
+    *
+      color: textColor($color-secundario)
+    &--borde
+      background-color: lighten($color-secundario, 50%)
+      color: textColor(lighten($color-secundario, 50%))
+      border: solid 4px $color-secundario
+  &.color-acento-contenido
+    background-color: $color-acento-contenido
+    *
+      color: textColor($color-acento-contenido)
+    &--borde
+      background-color: lighten($color-acento-contenido, 50%)
+      color: textColor(lighten($color-acento-contenido, 50%))
+      border: solid 4px $color-acento-contenido
+  &.color-acento-botones
+    background-color: $color-acento-botones
+    *
+      color: textColor($color-acento-botones)
+    &--borde
+      background-color: lighten($color-acento-botones, 50%)
+      color: textColor(lighten($color-acento-botones, 50%))
+      border: solid 4px $color-acento-botones
+
+// TARJETAS CON AVATAR
+.tarjeta-avatar
+  height: 100%
+  position: relative
+  padding-top: $tarjeta-avatar-ancho-img / 2
+  & > img
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translateX(-50%)
+    display: block
+    width: $tarjeta-avatar-ancho-img
+    margin: 0 auto
+
+  .tarjeta
+    display: inline-block
+    padding-top: 60px !important
+    height: 100%
+
+.tarjeta-avatar-b
+  display: flex
+
+  &__img
+    min-width: $tarjeta-avatar-b-ancho-img
+    max-width: $tarjeta-avatar-b-ancho-img
+    position: relative
+    display: flex
+    align-items: center
+
+  .tarjeta
+    width: 100%
+    margin-left: - $tarjeta-avatar-b-ancho-img / 2
+    padding-left: $tarjeta-avatar-b-ancho-img / 2
+
+.tarjeta-numerada
+  border: solid 2px
+  border-radius: 20px
+  position: relative
+  margin-left: 30px
+  &__numero
+    border-radius: 60px
+    width: 60px
+    height: 60px
+    display: inline-block
+    position: absolute  
+    left: 0
+    top: 25px
+    transform: translateX(-50%)
+    div
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+
+  &.color-primario
+    border-color: $color-primario
+    .tarjeta-numerada__numero
+      background-color: $color-primario
+      div
+        color: textColor($color-primario)
+  &.color-secundario
+    border-color: $color-secundario
+    .tarjeta-numerada__numero
+      background-color: $color-secundario
+      div
+        color: textColor($color-secundario)
+  &.color-acento-contenido
+    border-color: $color-acento-contenido
+    .tarjeta-numerada__numero
+      background-color: $color-acento-contenido
+      div
+        color: textColor($color-acento-contenido)
+  &.color-acento-botones
+    border-color: $color-acento-botones
+    .tarjeta-numerada__numero
+      background-color: $color-acento-botones
+      div
+        color: textColor($color-acento-botones)
+
+.tarjeta-flip
+  background-color: transparent !important
+  perspective: 1000px
+  height: 100%
+
+  &.tarjeta
+    .tarjeta-flip__img, .tarjeta-flip__contenido
+      border-radius: 20px
+      overflow: hidden
+
+  &__contenedor
+    position: relative
+    width: 100%
+    height: 100%
+    transition: transform 0.5s ease-in-out
+    transform-style: preserve-3d
+
+  &:hover 
+    .tarjeta-flip__contenedor
+      transform: rotateY(180deg)
+
+  &__img, &__contenido
+    -webkit-backface-visibility: hidden
+    backface-visibility: hidden
+  &__img
+    position: absolute
+    inset: 0
+    background-size: cover
+    background-position: center
+  &__contenido
+    transform: rotateY(180deg)
+    height: 100%
+
+  &.color-primario
+    .tarjeta-flip__img
+      background-color: $color-primario
+    .tarjeta-flip__contenido
+      background-color: $color-primario
+      color: textColor($color-primario)
+  &.color-secundario
+    .tarjeta-flip__img
+      background-color: $color-secundario
+    .tarjeta-flip__contenido
+      background-color: $color-secundario
+      color: textColor($color-secundario)
+  &.color-acento-contenido
+    .tarjeta-flip__img
+      background-color: $color-acento-contenido
+    .tarjeta-flip__contenido
+      background-color: $color-acento-contenido
+      color: textColor($color-acento-contenido)
+  &.color-acento-botones
+    .tarjeta-flip__img
+      background-color: $color-acento-botones
+    .tarjeta-flip__contenido
+      background-color: $color-acento-botones
+      color: textColor($color-acento-botones)
+
+
+.tarjeta-slide
+  height: 100%
+  position: relative
+  overflow: hidden
+  &__img
+    position: absolute
+    inset: 0
+    background-size: cover
+    background-position: center
+    transform: translate(0,0)
+    transition: transform 0.3s ease-in-out
+  
+
+  &.arriba
+    &:hover
+      .tarjeta-slide
+        &__img
+          transform: translate(0,-100%)
+
+  &.abajo
+    &:hover
+      .tarjeta-slide
+        &__img
+          transform: translate(0,100%)
+
+  &.izquierda
+    &:hover
+      .tarjeta-slide
+        &__img
+          transform: translate(-100%,0)
+
+  &.derecha
+    &:hover
+      .tarjeta-slide
+        &__img
+          transform: translate(100%,0)
+
+  &.color-primario
+    .tarjeta-slide
+      &__img
+        background-color: $color-primario
+
+  &.color-secundario
+    .tarjeta-slide
+      &__img
+        background-color: $color-secundario
+
+  &.color-acento-contenido
+    .tarjeta-slide
+      &__img
+        background-color: $color-acento-contenido
+
+  &.color-acento-botones
+    .tarjeta-slide
+      &__img
+        background-color: $color-acento-botones
+
+// Tarjeta Avatar Slide
+.tarjeta-avatar-slide
+  overflow-x: hidden
+  &:hover
+    .tarjeta-avatar-slide__img
+      transform: translateX(-50%)
+  &__img
+    display: flex
+    width: 200%
+    position: relative
+    transition: transform 0.3s ease-in-out
+    &__item
+      flex: 1
+      display: flex
+      justify-content: center

@@ -1,0 +1,24 @@
+.anexo
+  display: block
+  background-color: $color-fondo-anexo
+  position: relative
+  margin-left: 30px
+  padding: 20px
+  padding-left: 50px
+  white-space: normal
+  text-align: left
+  border-radius: 10px
+  *
+    line-height: $heading-line-height
+    color: $color-texto-anexo
+  p
+    margin-bottom: 0
+  
+  &__icono
+    width: 45px
+    position: absolute
+    left: -15px
+    top: 0
+
+  &:active, &:focus, &:hover
+    background-color: darken($color-fondo-anexo, 5%)

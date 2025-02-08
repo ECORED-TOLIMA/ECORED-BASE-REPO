@@ -1,0 +1,28 @@
+figure, picture,img,svg
+  margin: 0
+  width: 100%
+  max-width: 100%
+
+figcaption
+  display: block
+  background-color: $color-sistema-f
+  padding: $base-spacing /2 $base-spacing
+  font-size: 0.8em
+  font-weight: $base-bold-font-weight
+
+img,svg
+  display: block
+  border-style: none
+
+svg:not(:root)
+  overflow: hidden
+
+audio, canvas, progress, video
+  display: inline-block
+
+audio:not([controls])
+  display: none
+  height: 0
+
+template
+  display: none

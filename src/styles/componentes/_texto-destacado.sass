@@ -1,0 +1,268 @@
+.bloque-texto-a
+  position: relative
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 50%
+    right: 0
+  & > div
+    position: relative
+  &__texto
+    background-color: $white
+
+  &.color-primario
+    background-color: lighten($color-primario, 55%)
+    &:before
+      background-color: $color-primario
+  &.color-secundario
+    background-color: lighten($color-secundario, 20%)
+    &:before
+      background-color: $color-secundario
+  &.color-acento-contenido
+    background-color: lighten($color-acento-contenido, 25%)
+    &:before
+      background-color: $color-acento-contenido
+  &.color-acento-botones
+    background-color: lighten($color-acento-botones, 30%)
+    &:before
+      background-color: $color-acento-botones
+
+.bloque-texto-b
+  position: relative
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 40%
+    bottom: 0
+    left: 35%
+    right: 0
+  &__texto
+    position: relative
+    *
+      display: inline
+  i
+    font-size: 2.5em
+    color: $color-acento-contenido
+    &:first-of-type
+      margin-right: 15px
+    &:last-of-type
+      margin-left: 15px
+      vertical-align: text-top
+
+  &.color-primario
+    &:before
+      background-color: $color-primario
+  &.color-secundario
+    &:before
+      background-color: $color-secundario
+  &.color-acento-contenido
+    &:before
+      background-color: $color-acento-contenido
+  &.color-acento-botones
+    &:before
+      background-color: $color-acento-botones
+
+.bloque-texto-c
+  i
+    font-size: 2.5em
+    color: $color-acento-contenido
+  &:after
+    content: ''
+    display: block
+    width: 30px
+    height: 30px
+    background-color: $color-acento-contenido
+    position: relative
+    left: calc(100% - 30px)
+  &.color-primario
+    background-color: $color-primario
+  &.color-secundario
+    background-color: $color-secundario
+  &.color-acento-contenido
+    background-color: $color-acento-contenido
+  &.color-acento-botones
+    background-color: $color-acento-botones
+
+.bloque-texto-d
+  border-top: 1px solid $color-acento-contenido
+  position: relative
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 40%
+    bottom: 0
+    left: 35%
+    right: 0
+  &__texto
+    position: relative
+    *
+      display: inline
+  i
+    font-size: 2.5em
+    color: $color-acento-contenido
+    &:first-of-type
+      margin-right: 15px
+    &:last-of-type
+      margin-left: 15px
+      vertical-align: text-top
+  &__autor
+    text-align: right
+    position: relative
+  &.color-primario
+    &:before
+      background-color: $color-primario
+  &.color-secundario
+    &:before
+      background-color: $color-secundario
+  &.color-acento-contenido
+    &:before
+      background-color: $color-acento-contenido
+  &.color-acento-botones
+    &:before
+      background-color: $color-acento-botones
+
+.bloque-texto-e
+  &__texto
+    *
+      display: inline
+  i
+    font-size: 2.5em
+    color: $color-acento-contenido
+    &:first-of-type
+      margin-right: 15px
+    &:last-of-type
+      margin-left: 15px
+      vertical-align: text-top
+  &__autor
+    @extend .bloque-texto-d__autor
+  &.color-primario
+    background-color: $color-primario
+  &.color-secundario
+    background-color: $color-secundario
+  &.color-acento-contenido
+    background-color: $color-acento-contenido
+  &.color-acento-botones
+    background-color: $color-acento-botones
+
+.bloque-texto-f
+  display: flex
+  flex-direction: column
+  position: relative
+  padding-bottom: 50px
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 50px
+  &__comillas
+    position: initial
+
+    i
+      position: absolute
+      font-size: 2.5em
+      color: $color-acento-contenido
+      &:first-of-type
+        margin-right: 15px
+        top: 0
+        left: 40px
+        transform: translate(-50%,-50%)
+      &:last-of-type
+        margin-left: 15px
+        vertical-align: text-top
+        top: calc(100% - 50px)
+        right: 10px
+        margin: 0
+        transform: translate(-50%,-50%)
+
+  &__texto
+    position: relative
+    *
+      display: inline
+
+  &__autor
+    text-align: center
+    position: relative
+
+  &__avatar
+    position: relative
+    height: 50px
+    &__img
+      background-color: $white
+      position: absolute
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
+      width: 100px
+      border-radius: 50%
+      overflow: hidden
+      border: 5px solid $white
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3)
+
+  &.color-primario
+    &:before
+      background-color: $color-primario
+  &.color-secundario
+    &:before
+      background-color: $color-secundario
+  &.color-acento-contenido
+    &:before
+      background-color: $color-acento-contenido
+  &.color-acento-botones
+    &:before
+      background-color: $color-acento-botones
+
+.bloque-texto-g
+  position: relative
+  display: flex
+  justify-content: flex-end
+  &__img
+    width: 50%
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    background-position: center
+    background-size: cover
+  &__texto
+    position: relative
+    width: 60%
+    background-color: rgba( $white, .95 )
+    *
+      display: inline
+
+  &--inverso
+    justify-content: flex-start
+    .bloque-texto-g
+      &__img
+        left: auto
+        right: 0
+
+  @media (max-width: $bp-max-md)
+    padding-top: 40% !important
+    &__img
+      width: 100%
+      height: 50%
+    &__texto
+      width: 100%
+
+  @media (max-width: $bp-max-xs)
+    padding-top: 200px !important
+    &__img
+      height: 250px
+
+  &.color-primario
+    background-color: $color-primario
+  &.color-secundario
+    background-color: $color-secundario
+  &.color-acento-contenido
+    background-color: $color-acento-contenido
+  &.color-acento-botones
+    background-color: $color-acento-botones
