@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido(data-aos="fade-right")
       .titulo-principal__numero
         span 1
-      h1 Titulo de primer nivel
+      h1 Titulo_de_primer_nivel
         
     .titulo-segundo.color-secundario(data-aos="fade-right")
       h2 1.1  Título de segundo nivel, 24pt
@@ -1175,7 +1175,7 @@
           figcaption Leyenda de la imagen
 
     Separador
-    #llamados_accion.titulo-segundo.color-acento-botones
+    #llamados_accion.titulo-segundo.color-acento-botones(data-aos="fade-right")
       h2 Llamados a la acción
 
     p.mb-2 Es un bloque de texto que destaca por su composición y diseño. Su principal función es incentivar al usuario a realizar una acción a través de un botón o hipervínculo, en este caso, con el fin de poder acceder a recursos como infografías, videos, documentos y sitios web externos e independientes del componente formativo.
@@ -1215,14 +1215,14 @@
     //- .tarjeta debe ir acompañado de una de una de estas clases => 
     //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
     //- estas clases tambien tienen un modificador --borde
-    .tarjeta.color-acento-botones.p-4.p-md-5.mb-5(data-aos="fade-right") 
+    .tarjeta.color-acento-botones.p-4.p-md-5.mb-5(data-aos="fade-right")
       .row.justify-content-around.align-items-center
-        .col-lg-4.col-8.mb-lg-0.mb-4
+        .col-8.col-sm-6.col-md-4.mb-4.mb-md-0
           img(src="@/assets/componentes/ej-01.png")
-        .col-lg-8
+        .col-md.col-lg-6
           h3 Título del recurso
-          p.mb-4 There is no right answer. The splendor of the mystery is that you don’t understand. Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original. Why are you reading all of this?
-          a.boton.color-acento-contenido.texto-blanco.mb-0(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
+          p.mb-4 There is no right answer. The splendor of the mystery is that you don’t understand. Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original. Why are you reading all of this?  
+          a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
             span Descargar
             i.fas.fa-file-download
 
@@ -1230,7 +1230,7 @@
     //- .tarjeta debe ir acompañado de una de una de estas clases => 
     //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
     //- estas clases tambien tienen un modificador --borde
-    .tarjeta.color-primario.p-3.mb-5(data-aos="fade-right") 
+    .tarjeta.color-primario.p-3.mb-5(data-aos="fade-right")
       .row.justify-content-around.align-items-center
         .col-3.col-sm-2.col-lg-1
           img(src="@/assets/componentes/ej-02.svg")
@@ -1238,7 +1238,7 @@
           .row.justify-content-between.align-items-center
             .col.mb-sm-0.mb-4
               h3.mb-1 Título del recurso
-              p.text-small.mb-0 Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias  
+              p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias  
             .col-sm-auto
               a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
                 span Descargar
@@ -1247,13 +1247,13 @@
     //- .tarjeta debe ir acompañado de una de una de estas clases => 
     //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
     //- estas clases tambien tienen un modificador --borde
-    .tarjeta.color-acento-botones.p-3.mb-5(data-aos="fade-right") 
+    .tarjeta.color-acento-botones.p-3.mb-5(data-aos="fade-right")
       .row.justify-content-around.align-items-center
         .col-3.col-sm-2.col-lg-1
           img(src="@/assets/componentes/ej-02.svg")
         .col
           .row.justify-content-between.align-items-center
-            .col.mb-3.mb-sm-0
+            .col-mb-sm-0.mb-4
               h3.mb-1 Título del recurso
               p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias 
             .col-sm-auto
@@ -1262,13 +1262,13 @@
                 i.fas.fa-file-download
 
     .h5 Ejemplo: Llamado a la acción 3 Recursos externos versión simplificada
-    .row.justify-content-center
+    .row.justify-content-center.mb-5
       .col-lg-6
         a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
           .anexo__icono
             img(src="@/assets/template/icono-pdf.svg")
           .anexo__texto
-            p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias    
+            p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias   
         a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
           .anexo__icono
             img(src="@/assets/template/icono-doc.svg")
@@ -1285,556 +1285,453 @@
           .anexo__texto
             p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
       .col-lg-6
-        a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-left")
+        a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
           .anexo__icono
             img(src="@/assets/template/icono-zip.svg")
           .anexo__texto
             p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
-        a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-left")
+        a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
           .anexo__icono
             img(src="@/assets/template/icono-ppt.svg")
           .anexo__texto
             p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
-        a.anexo(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-left")
+        a.anexo(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
           .anexo__icono
             img(src="@/assets/template/icono-xml.svg")
           .anexo__texto
-            p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias         
+            p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
 
-  Separador
-  #llamados_accion.titulo-segundo.color-acento-botones(data-aos="fade-right")
-    h2 Llamados a la acción
+      Separador
+      #tarjetas.titulo-segundo.color-acento-botones(data-aos="fade-right")
+        h2 Tarjetas
 
-  p.mb-2 Es un bloque de texto que destaca por su composición y diseño. Su principal función es incentivar al usuario a realizar una acción a través de un botón o hipervínculo, en este caso, con el fin de poder acceder a recursos como infografías, videos, documentos y sitios web externos e independientes del componente formativo.
+      p.mb-3 Es la agrupación de contenidos (texto e imágenes) en forma de tarjeta, que tiene como propósito, uno, ser más amigable el consumo de la información y dos, destacar información o conceptos relevantes.
 
-  ul.lista-ul.mb-3
-    li(data-aos="fade-right") 
-      i.lista-ul__vineta
-      | Abrir PDF
-    li(data-aos="fade-right") 
-      i.lista-ul__vineta
-      | Infografías
-    li(data-aos="fade-right") 
-      i.lista-ul__vineta
-      | Documentos
-    li(data-aos="fade-right") 
-      i.lista-ul__vineta
-      | Videos externos 
-    li(data-aos="fade-right") 
-      i.lista-ul__vineta
-      | Enlaces
+      .h5 Requerimientos de información:
 
-  .h5 Requerimientos de información:
-
-  ul.lista-ul.mb-5
-    li(data-aos="fade-right") 
-      i.lista-ul__vineta
-      | Título llamativo, claro y conciso. 
-    li(data-aos="fade-right") 
-      i.lista-ul__vineta
-      | La redacción de los textos deben crear la necesidad de consultar el contenido sugerido (anexos).
-    li(data-aos="fade-right") 
-      i.lista-ul__vineta
-      | Se sugiere un párrafo de acompañamiento que no sobrepase las 3 líneas de texto en su extensión, cuya característica principal sea incentivar al aprendiz a consultar el recurso propuesto.
-
-  .h5 Ejemplo: Llamado a la acción 1 Acción de infografías
-
-  //- .tarjeta debe ir acompañado de una de una de estas clases => 
-  //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-  //- estas clases tambien tienen un modificador --borde
-  .tarjeta.color-acento-botones.p-4.p-md-5.mb-5(data-aos="fade-right")
-    .row.justify-content-around.align-items-center
-      .col-8.col-sm-6.col-md-4.mb-4.mb-md-0
-        img(src="@/assets/componentes/ej-01.png")
-      .col-md.col-lg-6
-        h3 Título del recurso
-        p.mb-4 There is no right answer. The splendor of the mystery is that you don’t understand. Your rapidograph pens are dried up, the x-acto blades in your bag are rusty, and your mind is dull. Stop clicking your mouse, get messy, go back to the basics and make something original. Why are you reading all of this?  
-        a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" type="application/pdf")
-          span Descargar
-          i.fas.fa-file-download
-
-  .h5 Ejemplo: Llamado a la acción 2 Recursos externos
-  //- .tarjeta debe ir acompañado de una de una de estas clases => 
-  //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-  //- estas clases tambien tienen un modificador --borde
-  .tarjeta.color-primario.p-3.mb-5(data-aos="fade-right")
-    .row.justify-content-around.align-items-center
-      .col-3.col-sm-2.col-lg-1
-        img(src="@/assets/componentes/ej-02.svg")
-      .col
-        .row.justify-content-between.align-items-center
-          .col.mb-sm-0.mb-4
-            h3.mb-1 Título del recurso
-            p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias  
-          .col-sm-auto
-            a.boton.color-acento-contenido.texto-blanco(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
-              span Descargar
-              i.fas.fa-file-download
-
-  //- .tarjeta debe ir acompañado de una de una de estas clases => 
-  //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-  //- estas clases tambien tienen un modificador --borde
-  .tarjeta.color-acento-botones.p-3.mb-5(data-aos="fade-right")
-    .row.justify-content-around.align-items-center
-      .col-3.col-sm-2.col-lg-1
-        img(src="@/assets/componentes/ej-02.svg")
-      .col
-        .row.justify-content-between.align-items-center
-          .col-mb-sm-0.mb-4
-            h3.mb-1 Título del recurso
-            p.text-small Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias 
-          .col-sm-auto
-            a.boton.color-acento-contenido(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
-              span Descargar
-              i.fas.fa-file-download
-
-  .h5 Ejemplo: Llamado a la acción 3 Recursos externos versión simplificada
-  .row.justify-content-center.mb-5
-    .col-lg-6
-      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
-        .anexo__icono
-          img(src="@/assets/template/icono-pdf.svg")
-        .anexo__texto
-          p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias   
-      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
-        .anexo__icono
-          img(src="@/assets/template/icono-doc.svg")
-        .anexo__texto
-          p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
-      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
-        .anexo__icono
-          img(src="@/assets/template/icono-xls.svg")
-        .anexo__texto
-          p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
-      a.anexo.mb-4(href="https://en.wikipedia.org/wiki/Main_Page" target="_blank" data-aos="fade-right")
-        .anexo__icono
-          img(src="@/assets/template/icono-link.svg")
-        .anexo__texto
-          p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
-    .col-lg-6
-      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
-        .anexo__icono
-          img(src="@/assets/template/icono-zip.svg")
-        .anexo__texto
-          p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
-      a.anexo.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
-        .anexo__icono
-          img(src="@/assets/template/icono-ppt.svg")
-        .anexo__texto
-          p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
-      a.anexo(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank" data-aos="fade-right")
-        .anexo__icono
-          img(src="@/assets/template/icono-xml.svg")
-        .anexo__texto
-          p.mb-0 Anexo. Consideraciones generales de tratamiento clínico del paciente con COVID-19 en el servicio de urgencias
-
-    Separador
-    #tarjetas.titulo-segundo.color-acento-botones(data-aos="fade-right")
-      h2 Tarjetas
-
-    p.mb-3 Es la agrupación de contenidos (texto e imágenes) en forma de tarjeta, que tiene como propósito, uno, ser más amigable el consumo de la información y dos, destacar información o conceptos relevantes.
-
-    .h5 Requerimientos de información:
-
-    ul.lista-ul.mb-5
-      li(data-aos="fade-right") 
-        i.lista-ul__vineta
-        | Título corto y claro.
-      li(data-aos="fade-right") 
-        i.lista-ul__vineta
-        | Información precisa, que reporten conceptos o definiciones.
-      li(data-aos="fade-right") 
-        i.lista-ul__vineta
-        | Se sugiere una cantidad de texto igual o menor a 4 líneas de word tamaño carta.
-
-
-    h3 Tarjetas botones
-    .row.mb-5
-      .col-sm-6.col-lg-3.mb-4.mb-lg-0
-        //- .tarjeta--boton debe ir acompañado de una de una de estas clases => 
-        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-        //- estas clases tambien tienen un modificador --borde
-        .tarjeta--boton.color-primario.p-4
-          .row.justify-content-center.mb-3
-            .col-7
-              figure
-                img(src='@/assets/componentes/ej-03.svg', alt="Imagen decorativa")
-          h3.text-center Intuition important
-          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
-
-      .col-sm-6.col-lg-3.mb-4.mb-lg-0
-        //- .tarjeta--boton debe ir acompañado de una de una de estas clases => 
-        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-        //- estas clases tambien tienen un modificador --borde
-        .tarjeta--boton.color-secundario.p-4
-          .row.justify-content-center.mb-3
-            .col-7
-              figure
-                img(src='@/assets/componentes/ej-03.svg', alt="Imagen decorativa")
-
-          h3.text-center Intuition important
-          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
-
-      .col-sm-6.col-lg-3.mb-4.mb-sm-0
-        //- .tarjeta--boton debe ir acompañado de una de una de estas clases => 
-        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-        //- estas clases tambien tienen un modificador --borde
-        .tarjeta--boton.color-acento-contenido.text-white--hover.p-4
-          .row.justify-content-center.mb-3
-            .col-7
-              figure
-                img(src='@/assets/componentes/ej-03.svg', alt="Imagen decorativa")
-
-          h3.text-center Intuition important
-          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
-
-      .col-sm-6.col-lg-3
-        //- .tarjeta--boton debe ir acompañado de una de una de estas clases => 
-        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-        //- estas clases tambien tienen un modificador --borde
-        .tarjeta--boton.color-acento-botones.p-4
-          .row.justify-content-center.mb-3
-            .col-7
-              figure
-                img(src='@/assets/componentes/ej-03.svg', alt="Imagen decorativa")
-
-          h3.text-center Intuition important
-          p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
-
-
-    h3 Tarjetas conectadas
-    .tarjeta--container.row.mb-5
-      //- .tarjeta debe ir acompañado de una de una de estas clases => 
-      //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-      //- estas clases tambien tienen un modificador --borde
-      .col-md.tarjeta.color-primario.p-5
-        .row.justify-content-center.mb-4
-          .col-6
-            figure
-              img(src='@/assets/componentes/ej-05.svg', alt="Imagen decorativa")
-          
-        h2.text-center Celebrate your<br>failures
-        p To surpass others is fucking tough, if you only do as you are told you don’t have it in you to succeed. Think about all the possibilities. You’ve been placed in the crucial moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-      //- .tarjeta debe ir acompañado de una de una de estas clases => 
-      //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-      //- estas clases tambien tienen un modificador --borde
-      .col-md.tarjeta.color-acento-botones.p-5
-        .row.justify-content-center.mb-4
-          .col-6
-            figure
-              img(src='@/assets/componentes/ej-05.svg', alt="Imagen decorativa")
-          
-        h2.text-center Sterility leads to<br>susceptibility
-        p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
-
-      //- .tarjeta debe ir acompañado de una de una de estas clases => 
-      //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-      //- estas clases tambien tienen un modificador --borde
-      .col-md.tarjeta.color-acento-contenido.text-white.p-5
-        .row.justify-content-center.mb-4
-          .col-6
-            figure
-              img(src='@/assets/componentes/ej-05.svg', alt="Imagen decorativa")
-          
-        h2.text-center Sterility leads to<br>susceptibility
-        p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
-
-    h3 Tarjetas avatar A
-    .row
-      .col-lg-6
-        .tarjeta-avatar-b.mb-5
-          .tarjeta-avatar-b__img
-            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-          .tarjeta.tarjeta--azul
-            .p-4
-              h2 John Doe
-              p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-      .col-lg-6
-        .tarjeta-avatar-b.mb-5
-          .tarjeta-avatar-b__img
-            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-          //- .tarjeta debe ir acompañado de una de una de estas clases => 
-          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-          //- estas clases tambien tienen un modificador --borde
-          .tarjeta.color-acento-botones
-            .p-4
-              h2 John Doe
-              p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-      .col-lg-6
-        .tarjeta-avatar-b.mb-5
-          .tarjeta-avatar-b__img
-            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-          //- .tarjeta debe ir acompañado de una de una de estas clases => 
-          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-          //- estas clases tambien tienen un modificador --borde
-          .tarjeta.color-acento-contenido
-            .p-4
-              h2 Greatness isn’t the height
-              p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-      .col-lg-6
-        .tarjeta-avatar-b.mb-5
-          .tarjeta-avatar-b__img
-            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-          //- .tarjeta debe ir acompañado de una de una de estas clases => 
-          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-          //- estas clases tambien tienen un modificador --borde
-          .tarjeta.color-primario.text-white
-            .p-4
-              h2 Greatness isn’t the height
-              p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-    h3 Tarjetas avatar B
-    .row.mb-5
-      .col-md-6.col-lg.mb-5.mb-lg-0
-        .tarjeta-avatar
-          img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-          //- .tarjeta debe ir acompañado de una de una de estas clases => 
-          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-          //- estas clases tambien tienen un modificador --borde
-          .tarjeta.color-primario
-            .text-white.p-4
-              h2.text-center John Doe
-              p moment. K askdnaskjda sjkdn akjsndasd ajshd akjshd kajshd ask djhak sjdha ksjdha kjsdha kjsdha kjsdh akjshda kjshd aksjdh kajsd djkhakjshdka jsak Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-      .col-md-6.col-lg.mb-5.mb-lg-0
-        .tarjeta-avatar
-          img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-          //- .tarjeta debe ir acompañado de una de una de estas clases => 
-          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-          //- estas clases tambien tienen un modificador --borde
-          .tarjeta.color-acento-botones
-            .p-4
-              h2.text-center John Doe
-              p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-      .col-md-6.col-lg.mb-5.mb-lg-0
-        .tarjeta-avatar
-          img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-          //- .tarjeta debe ir acompañado de una de una de estas clases => 
-          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-          //- estas clases tambien tienen un modificador --borde
-          .tarjeta.color-acento-contenido
-            .p-4
-              h2.text-center Greatness isn’t the height
-              p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-    h3 Tarjetas flip
-
-    .row.mb-5
-      .col-sm-6.col-xl-3.mb-4.mb-xl-0
-        .tarjeta.tarjeta-flip.color-primario(@mouseover="indicadorTarjetaFlip = false")
-          .indicador--hover(v-if="indicadorTarjetaFlip")
-          .tarjeta-flip__contenedor
-            .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
-            .tarjeta-flip__contenido.p-4.p-xl-5
-              h1 John Doe
-              p Lorem ipsum dolor sit amet, 
-
-      .col-sm-6.col-xl-3.mb-4.mb-xl-0
-        .tarjeta.tarjeta-flip.color-secundario(@mouseover="indicadorTarjetaFlip = false")
-          .tarjeta-flip__contenedor
-            .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
-            .tarjeta-flip__contenido.p-4.p-xl-5
-              h1 John Doe
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
-
-      .col-sm-6.col-xl-3.mb-4.mb-sm-0
-        .tarjeta.tarjeta-flip.color-acento-contenido(@mouseover="indicadorTarjetaFlip = false")
-          .tarjeta-flip__contenedor
-            .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
-            .tarjeta-flip__contenido.p-4.p-xl-5
-              h1 John Doe
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
-
-      .col-sm-6.col-xl-3
-        .tarjeta.tarjeta-flip.color-acento-botones(@mouseover="indicadorTarjetaFlip = false")
-          .tarjeta-flip__contenedor
-            .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
-            .tarjeta-flip__contenido.p-4.p-xl-5
-              h1 John Doe
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
-
-    h3 Tarjetas slide
-
-    //- .tarjeta-slide debe ir acompañado de una de una de estas clases => 
-    //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-    //- .arriba, .abajo, .derecha, .izquierda para controlar la animacion
-    .row.mb-5
-      .col-sm-6.col-xl-3.mb-4.mb-xl-0
-        .tarjeta.tarjeta-slide.arriba.color-primario(@mouseover="indicadorTarjetaSlide = false")
-          .indicador--hover(v-if="indicadorTarjetaSlide")
-          .tarjeta-slide__contenedor
-            .tarjeta-slide__contenido.p-4.p-xl-5
-              h1 John Doe
-              p Lorem ipsum dolor sit amet, 
-            .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
-
-      .col-sm-6.col-xl-3.mb-4.mb-xl-0
-        .tarjeta.tarjeta-slide.abajo.color-secundario(@mouseover="indicadorTarjetaSlide = false")
-          .tarjeta-slide__contenedor
-            .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
-            .tarjeta-slide__contenido.p-4.p-xl-5
-              h1 John Doe
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
-
-      .col-sm-6.col-xl-3.mb-4.mb-sm-0
-        .tarjeta.tarjeta-slide.derecha.color-acento-contenido(@mouseover="indicadorTarjetaSlide = false")
-          .tarjeta-slide__contenedor
-            .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
-            .tarjeta-slide__contenido.p-4.p-xl-5
-              h1 John Doe
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
-
-      .col-sm-6.col-xl-3
-        .tarjeta.tarjeta-slide.izquierda.color-acento-botones(@mouseover="indicadorTarjetaSlide = false")
-          .tarjeta-slide__contenedor
-            .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
-            .tarjeta-slide__contenido.p-4.p-xl-5
-              h1 John Doe
-              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
-
-    h3 Tarjetas Tabla
-    .row.mb-5
-      .col-md-6.col-lg.tarjeta--tabla.p-4
-        .row.justify-content-center.mb-3
-          .col-4
-            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-        h2.text-center John Doe
-        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-      .col-md-6.col-lg.tarjeta--tabla.p-4
-        .row.justify-content-center.mb-3
-          .col-4
-            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-        h2.text-center John Doe
-        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-      .col-md-6.col-lg.tarjeta--tabla.p-4
-        .row.justify-content-center.mb-3
-          .col-4
-            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-        h2.text-center John Doe
-        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-      .col-md-6.col-lg.tarjeta--tabla.p-4
-        .row.justify-content-center.mb-3
-          .col-4
-            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
-        h2.text-center John Doe
-        p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
-
-    h3 Tarjetas con número
-
-    .row.mb-5
-      .col-md-6.col-xl.mb-4.mb-xl-0
-        //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
-        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-        //- estas clases tambien tienen un modificador --borde
-        .tarjeta-numerada.color-primario.p-5
-          .tarjeta-numerada__numero
-            .h2 1
-          p.text-center 
-            b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
-          p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
-
-      .col-md-6.col-xl.mb-4.mb-xl-0
-        //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
-        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-        //- estas clases tambien tienen un modificador --borde
-        .tarjeta-numerada.color-secundario.p-5
-          .tarjeta-numerada__numero
-            .h2 2
-          p.text-center 
-            b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
-          p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
-
-      .col-md-6.col-xl.mb-4.mb-xl-0
-        //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
-        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-        //- estas clases tambien tienen un modificador --borde
-        .tarjeta-numerada.color-acento-contenido.p-5
-          .tarjeta-numerada__numero
-            .h2 3
-          p.text-center 
-            b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
-          p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
-
-      .col-md-6.col-xl.mb-4.mb-xl-0
-        //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
-        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
-        //- estas clases tambien tienen un modificador --borde
-        .tarjeta-numerada.color-acento-botones.p-5
-          .tarjeta-numerada__numero
-            .h2 4
-          p.text-center 
-            b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
-          p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
-
-    Separador
-    #modal.titulo-segundo.color-acento-botones
-      h2 Modal
-
-    .row
-      .col-auto
-        a.boton.color-acento-contenido.indicador__container(@click="modal1 = true")
-          span Abrir modal
-          .indicador--click(v-if="mostrarIndicador")
-      .col
-        p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t 
-          a.lnk(@click="modal1 = true") Abrir modal 
-          |the height of your stature, it’s the heft of your spirit.
+      ul.lista-ul.mb-5
+        li(data-aos="fade-right") 
+          i.lista-ul__vineta
+          | Título corto y claro.
+        li(data-aos="fade-right") 
+          i.lista-ul__vineta
+          | Información precisa, que reporten conceptos o definiciones.
+        li(data-aos="fade-right") 
+          i.lista-ul__vineta
+          | Se sugiere una cantidad de texto igual o menor a 4 líneas de word tamaño carta.
     
-    ModalA(:abrir-modal.sync="modal1")
-      .row.align-items-center
-        .col-md-6.mb-4.mb-md-0
-          h4 Modal 1
-          p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+    h3 tarjeta de deslizamiento arriba abajo
+    .row.justify-content-center.mb-5
+      .col-xl-5.col-lg-6.col-sm-8.col-10.mb-4(data-aos="fade-right")
+        .tarjetas-up(@mouseover="mostrarIndicador = false")
+          .indicador--hover(v-if="mostrarIndicador")
+          img(src='@/assets/template/img-placeholder.svg' alt="Imagen decorativa")
+          .tarjetas-up_card.BG03.p-xl-4.p-lg-3.p-4
+            .title.d-flex.align-items-center.justify-content-center.mb-4
+              span
+                i.fas.fa-caret-up.fa-2x.me-3
+                i.fas.fa-caret-down.fa-2x.me-3
+              h4.mb-0 Desempeño financiero
+            p.text-center.mb-0 Analiza la rentabilidad del proyecto mediante indicadores como ingresos totales, costos operativos, margen de ganancia y retorno sobre la inversión (ROI).
+      .col-xl-5.col-lg-6.col-sm-8.col-10.mb-4(data-aos="flip-up")
+        .tarjetas-up(@mouseover="mostrarIndicador = false")
+          .indicador--hover(v-if="mostrarIndicador")
+          img(src='@/assets/template/img-placeholder.svg' alt="Imagen decorativa")
+          .tarjetas-up_card.BG03.p-xl-4.p-lg-3.p-4
+            .title.d-flex.align-items-center.justify-content-center.mb-4
+              span
+                i.fas.fa-caret-up.fa-2x.me-3
+                i.fas.fa-caret-down.fa-2x.me-3
+              h4.mb-0 Experiencia del cliente
+            p.text-center.mb-0 Mide la satisfacción del visitante a través de encuestas, opiniones en redes sociales, tasa de retención y el Net Promoter Score (NPS), que indica la probabilidad de recomendación.
+
+      h3 Tarjetas botones
+      .row.mb-5
+        .col-sm-6.col-lg-3.mb-4.mb-lg-0
+          //- .tarjeta--boton debe ir acompañado de una de una de estas clases => 
+          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+          //- estas clases tambien tienen un modificador --borde
+          .tarjeta--boton.color-primario.p-4
+            .row.justify-content-center.mb-3
+              .col-7
+                figure
+                  img(src='@/assets/componentes/ej-03.svg', alt="Imagen decorativa")
+            h3.text-center Intuition important
+            p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+
+        .col-sm-6.col-lg-3.mb-4.mb-lg-0
+          //- .tarjeta--boton debe ir acompañado de una de una de estas clases => 
+          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+          //- estas clases tambien tienen un modificador --borde
+          .tarjeta--boton.color-secundario.p-4
+            .row.justify-content-center.mb-3
+              .col-7
+                figure
+                  img(src='@/assets/componentes/ej-03.svg', alt="Imagen decorativa")
+
+            h3.text-center Intuition important
+            p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+
+        .col-sm-6.col-lg-3.mb-4.mb-sm-0
+          //- .tarjeta--boton debe ir acompañado de una de una de estas clases => 
+          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+          //- estas clases tambien tienen un modificador --borde
+          .tarjeta--boton.color-acento-contenido.text-white--hover.p-4
+            .row.justify-content-center.mb-3
+              .col-7
+                figure
+                  img(src='@/assets/componentes/ej-03.svg', alt="Imagen decorativa")
+
+            h3.text-center Intuition important
+            p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+
+        .col-sm-6.col-lg-3
+          //- .tarjeta--boton debe ir acompañado de una de una de estas clases => 
+          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+          //- estas clases tambien tienen un modificador --borde
+          .tarjeta--boton.color-acento-botones.p-4
+            .row.justify-content-center.mb-3
+              .col-7
+                figure
+                  img(src='@/assets/componentes/ej-03.svg', alt="Imagen decorativa")
+
+            h3.text-center Intuition important
+            p.text-small Sed ut perspiciatis unde omnis iste natus error sit vtatem accusa ntium dol.
+
+
+      h3 Tarjetas conectadas
+      .tarjeta--container.row.mb-5
+        //- .tarjeta debe ir acompañado de una de una de estas clases => 
+        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+        //- estas clases tambien tienen un modificador --borde
+        .col-md.tarjeta.color-primario.p-5
+          .row.justify-content-center.mb-4
+            .col-6
+              figure
+                img(src='@/assets/componentes/ej-05.svg', alt="Imagen decorativa")
+            
+          h2.text-center Celebrate your<br>failures
+          p To surpass others is fucking tough, if you only do as you are told you don’t have it in you to succeed. Think about all the possibilities. You’ve been placed in the crucial moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+        //- .tarjeta debe ir acompañado de una de una de estas clases => 
+        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+        //- estas clases tambien tienen un modificador --borde
+        .col-md.tarjeta.color-acento-botones.p-5
+          .row.justify-content-center.mb-4
+            .col-6
+              figure
+                img(src='@/assets/componentes/ej-05.svg', alt="Imagen decorativa")
+            
+          h2.text-center Sterility leads to<br>susceptibility
+          p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
+
+        //- .tarjeta debe ir acompañado de una de una de estas clases => 
+        //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+        //- estas clases tambien tienen un modificador --borde
+        .col-md.tarjeta.color-acento-contenido.text-white.p-5
+          .row.justify-content-center.mb-4
+            .col-6
+              figure
+                img(src='@/assets/componentes/ej-05.svg', alt="Imagen decorativa")
+            
+          h2.text-center Sterility leads to<br>susceptibility
+          p Remember it’s called the creative process, it’s not the creative moment. Saul Bass on failure: Failure is built into creativity… the creative act involves this element of ‘newness’ and ‘experimentalism,’ then one must expect and accept the possibility of failure.
+
+      h3 Tarjetas avatar A
+      .row
+        .col-lg-6
+          .tarjeta-avatar-b.mb-5
+            .tarjeta-avatar-b__img
+              img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+            .tarjeta.tarjeta--azul
+              .p-4
+                h2 John Doe
+                p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+        .col-lg-6
+          .tarjeta-avatar-b.mb-5
+            .tarjeta-avatar-b__img
+              img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+            //- .tarjeta debe ir acompañado de una de una de estas clases => 
+            //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+            //- estas clases tambien tienen un modificador --borde
+            .tarjeta.color-acento-botones
+              .p-4
+                h2 John Doe
+                p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+        .col-lg-6
+          .tarjeta-avatar-b.mb-5
+            .tarjeta-avatar-b__img
+              img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+            //- .tarjeta debe ir acompañado de una de una de estas clases => 
+            //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+            //- estas clases tambien tienen un modificador --borde
+            .tarjeta.color-acento-contenido
+              .p-4
+                h2 Greatness isn’t the height
+                p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+        .col-lg-6
+          .tarjeta-avatar-b.mb-5
+            .tarjeta-avatar-b__img
+              img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+            //- .tarjeta debe ir acompañado de una de una de estas clases => 
+            //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+            //- estas clases tambien tienen un modificador --borde
+            .tarjeta.color-primario.text-white
+              .p-4
+                h2 Greatness isn’t the height
+                p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+      h3 Tarjetas avatar B
+      .row.mb-5
+        .col-md-6.col-lg.mb-5.mb-lg-0
+          .tarjeta-avatar
+            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+            //- .tarjeta debe ir acompañado de una de una de estas clases => 
+            //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+            //- estas clases tambien tienen un modificador --borde
+            .tarjeta.color-primario
+              .text-white.p-4
+                h2.text-center John Doe
+                p moment. K askdnaskjda sjkdn akjsndasd ajshd akjshd kajshd ask djhak sjdha ksjdha kjsdha kjsdha kjsdh akjshda kjshd aksjdh kajsd djkhakjshdka jsak Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+        .col-md-6.col-lg.mb-5.mb-lg-0
+          .tarjeta-avatar
+            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+            //- .tarjeta debe ir acompañado de una de una de estas clases => 
+            //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+            //- estas clases tambien tienen un modificador --borde
+            .tarjeta.color-acento-botones
+              .p-4
+                h2.text-center John Doe
+                p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+        .col-md-6.col-lg.mb-5.mb-lg-0
+          .tarjeta-avatar
+            img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+            //- .tarjeta debe ir acompañado de una de una de estas clases => 
+            //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+            //- estas clases tambien tienen un modificador --borde
+            .tarjeta.color-acento-contenido
+              .p-4
+                h2.text-center Greatness isn’t the height
+                p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+      h3 Tarjetas flip
+
+      .row.mb-5
+        .col-sm-6.col-xl-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-flip.color-primario(@mouseover="indicadorTarjetaFlip = false")
+            .indicador--hover(v-if="indicadorTarjetaFlip")
+            .tarjeta-flip__contenedor
+              .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+              .tarjeta-flip__contenido.p-4.p-xl-5
+                h1 John Doe
+                p Lorem ipsum dolor sit amet, 
+
+        .col-sm-6.col-xl-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-flip.color-secundario(@mouseover="indicadorTarjetaFlip = false")
+            .tarjeta-flip__contenedor
+              .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+              .tarjeta-flip__contenido.p-4.p-xl-5
+                h1 John Doe
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+        .col-sm-6.col-xl-3.mb-4.mb-sm-0
+          .tarjeta.tarjeta-flip.color-acento-contenido(@mouseover="indicadorTarjetaFlip = false")
+            .tarjeta-flip__contenedor
+              .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+              .tarjeta-flip__contenido.p-4.p-xl-5
+                h1 John Doe
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+        .col-sm-6.col-xl-3
+          .tarjeta.tarjeta-flip.color-acento-botones(@mouseover="indicadorTarjetaFlip = false")
+            .tarjeta-flip__contenedor
+              .tarjeta-flip__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+              .tarjeta-flip__contenido.p-4.p-xl-5
+                h1 John Doe
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+      h3 Tarjetas slide
+
+      //- .tarjeta-slide debe ir acompañado de una de una de estas clases => 
+      //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+      //- .arriba, .abajo, .derecha, .izquierda para controlar la animacion
+      .row.mb-5
+        .col-sm-6.col-xl-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-slide.arriba.color-primario(@mouseover="indicadorTarjetaSlide = false")
+            .indicador--hover(v-if="indicadorTarjetaSlide")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__contenido.p-4.p-xl-5
+                h1 John Doe
+                p Lorem ipsum dolor sit amet, 
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+
+        .col-sm-6.col-xl-3.mb-4.mb-xl-0
+          .tarjeta.tarjeta-slide.abajo.color-secundario(@mouseover="indicadorTarjetaSlide = false")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+              .tarjeta-slide__contenido.p-4.p-xl-5
+                h1 John Doe
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+        .col-sm-6.col-xl-3.mb-4.mb-sm-0
+          .tarjeta.tarjeta-slide.derecha.color-acento-contenido(@mouseover="indicadorTarjetaSlide = false")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+              .tarjeta-slide__contenido.p-4.p-xl-5
+                h1 John Doe
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+        .col-sm-6.col-xl-3
+          .tarjeta.tarjeta-slide.izquierda.color-acento-botones(@mouseover="indicadorTarjetaSlide = false")
+            .tarjeta-slide__contenedor
+              .tarjeta-slide__img(:style="{'background-image': `url(${require('@/assets/curso/avatar.svg')})`}")
+              .tarjeta-slide__contenido.p-4.p-xl-5
+                h1 John Doe
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vestibulum tortor at blandit congue. Pellentesque vel felis posuere, molestie metus id, vulputate turpis.
+
+      h3 Tarjetas Tabla
+      .row.mb-5
+        .col-md-6.col-lg.tarjeta--tabla.p-4
+          .row.justify-content-center.mb-3
+            .col-4
+              img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+          h2.text-center John Doe
+          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+        .col-md-6.col-lg.tarjeta--tabla.p-4
+          .row.justify-content-center.mb-3
+            .col-4
+              img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+          h2.text-center John Doe
+          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+        .col-md-6.col-lg.tarjeta--tabla.p-4
+          .row.justify-content-center.mb-3
+            .col-4
+              img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+          h2.text-center John Doe
+          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+        .col-md-6.col-lg.tarjeta--tabla.p-4
+          .row.justify-content-center.mb-3
+            .col-4
+              img(src='@/assets/componentes/ej-05.svg' alt="Imagen decorativa")
+          h2.text-center John Doe
+          p.text-center moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t the height of your stature, it’s the heft of your spirit.
+
+      h3 Tarjetas con número
+
+      .row.mb-5
+        .col-md-6.col-xl.mb-4.mb-xl-0
+          //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
+          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+          //- estas clases tambien tienen un modificador --borde
+          .tarjeta-numerada.color-primario.p-5
+            .tarjeta-numerada__numero
+              .h2 1
+            p.text-center 
+              b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
+            p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+
+        .col-md-6.col-xl.mb-4.mb-xl-0
+          //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
+          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+          //- estas clases tambien tienen un modificador --borde
+          .tarjeta-numerada.color-secundario.p-5
+            .tarjeta-numerada__numero
+              .h2 2
+            p.text-center 
+              b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
+            p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+
+        .col-md-6.col-xl.mb-4.mb-xl-0
+          //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
+          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+          //- estas clases tambien tienen un modificador --borde
+          .tarjeta-numerada.color-acento-contenido.p-5
+            .tarjeta-numerada__numero
+              .h2 3
+            p.text-center 
+              b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
+            p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+
+        .col-md-6.col-xl.mb-4.mb-xl-0
+          //- .tarjeta-numerada debe ir acompañado de una de una de estas clases => 
+          //- .color-primario, .color-secundario, .color-acento-contenido, .color-acento-botones
+          //- estas clases tambien tienen un modificador --borde
+          .tarjeta-numerada.color-acento-botones.p-5
+            .tarjeta-numerada__numero
+              .h2 4
+            p.text-center 
+              b Ruta integral de atención en salud para la promoción y mantenimiento de la salud 
+            p.text-center Acciones realizadas en los entornos donde transcurre la vida y se desarrollan las personas
+
+      Separador
+      #modal.titulo-segundo.color-acento-botones
+        h2 Modal
+
+      .row
+        .col-auto
+          a.boton.color-acento-contenido.indicador__container(@click="modal1 = true")
+            span Abrir modal
+            .indicador--click(v-if="mostrarIndicador")
+        .col
+          p moment. Abandon the shelter of insecurity. Be bold. Greatness isn’t 
+            a.lnk(@click="modal1 = true") Abrir modal 
+            |the height of your stature, it’s the heft of your spirit.
       
-        .col-md-6
-          figure
-            img(src='@/assets/template/img-placeholder.svg', alt="Imagen decorativa")
-            figcaption Leyenda de la imagen
-    
-    Separador
-    #modal.titulo-segundo.color-acento-botones
-      h2 Animaciones
+      ModalA(:abrir-modal.sync="modal1")
+        .row.align-items-center
+          .col-md-6.mb-4.mb-md-0
+            h4 Modal 1
+            p This is another paragraph. I think it needs to be added that the set of elements tested is not exhaustive in any sense. I have selected those elements for which it can make sense to write user style sheet rules, in my opionion.
+        
+          .col-md-6
+            figure
+              img(src='@/assets/template/img-placeholder.svg', alt="Imagen decorativa")
+              figcaption Leyenda de la imagen
+      
+      Separador
+      #modal.titulo-segundo.color-acento-botones
+        h2 Animaciones
 
-    h3.titulo-tercero Fade
-    .row.mb-5
-      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
-        .tarjeta.color-acento-botones.text-center.p-3(data-aos="fade-left")
-          h3.mb-0 fade-left
-      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
-        .tarjeta.color-primario.text-center.p-3(data-aos="fade-right")
-          h3.mb-0 fade-right
+      h3.titulo-tercero Fade
+      .row.mb-5
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-acento-botones.text-center.p-3(data-aos="fade-left")
+            h3.mb-0 fade-left
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-primario.text-center.p-3(data-aos="fade-right")
+            h3.mb-0 fade-right
 
-    h3.titulo-tercero Flip
-    .row.mb-5
-      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
-        .tarjeta.color-primario.text-center.p-3(data-aos="flip-up")
-          h3.mb-0 flip-up
-      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
-        .tarjeta.color-secundario.text-center.p-3(data-aos="flip-down")
-          h3.mb-0 flip-down
-      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
-        .tarjeta.color-acento-contenido.text-center.p-3(data-aos="flip-left")
-          h3.mb-0 flip-left
-      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
-        .tarjeta.color-acento-botones.text-center.p-3(data-aos="flip-right")
-          h3.mb-0 flip-right
+      h3.titulo-tercero Flip
+      .row.mb-5
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-primario.text-center.p-3(data-aos="flip-up")
+            h3.mb-0 flip-up
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-secundario.text-center.p-3(data-aos="flip-down")
+            h3.mb-0 flip-down
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-acento-contenido.text-center.p-3(data-aos="flip-left")
+            h3.mb-0 flip-left
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-acento-botones.text-center.p-3(data-aos="flip-right")
+            h3.mb-0 flip-right
 
-    h3.titulo-tercero Zoom
-    .row
-      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
-        .tarjeta.color-primario.text-center.p-3(data-aos="zoom-in")
-          h3.mb-0 zoom-in
-      .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
-        .tarjeta.color-secundario.text-center.p-3(data-aos="zoom-in-up")
-          h3.mb-0 zoom-out
+      h3.titulo-tercero Zoom
+      .row
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-primario.text-center.p-3(data-aos="zoom-in")
+            h3.mb-0 zoom-in
+        .col-sm-6.col-md-4.col-lg-3.col-xxl-2.mb-3
+          .tarjeta.color-secundario.text-center.p-3(data-aos="zoom-in-up")
+            h3.mb-0 zoom-out
 
   </template>
 

@@ -1,11 +1,11 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import Complementario from 'ecored-pkg-fliz/plugin/components/Complementario.vue'
+import Creditos from 'ecored-pkg-fliz/plugin/components/Creditos.vue'
+import Glosario from 'ecored-pkg-fliz/plugin/components/Glosario.vue'
 import Inicio from 'ecored-pkg-fliz/plugin/components/Inicio.vue'
 import Curso from 'ecored-pkg-fliz/plugin/components/plantilla/Curso.vue'
-import Glosario from 'ecored-pkg-fliz/plugin/components/Glosario.vue'
 import Referencias from 'ecored-pkg-fliz/plugin/components/Referencias.vue'
-import Creditos from 'ecored-pkg-fliz/plugin/components/Creditos.vue'
-import Complementario from 'ecored-pkg-fliz/plugin/components/Complementario.vue'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
@@ -47,18 +47,6 @@ const router = new VueRouter({
           name: 'tema3',
           component: () =>
             import(/* webpackChunkName: "tema3" */ '../views/Tema3.vue'),
-        },
-        {
-          path: 'tema4',
-          name: 'tema4',
-          component: () =>
-            import(/* webpackChunkName: "tema4" */ '../views/Tema4.vue'),
-        },
-        {
-          path: 'tema5',
-          name: 'tema5',
-          component: () =>
-            import(/* webpackChunkName: "tema5" */ '../views/Tema5.vue'),
         },
       ],
     },
