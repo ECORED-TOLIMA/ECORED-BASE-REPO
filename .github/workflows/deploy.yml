@@ -36,8 +36,9 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git checkout gh-pages || git checkout --orphan gh-pages  # Si la rama existe, la usa; si no, la crea
           git rm -rf .  # Limpia la rama gh-pages
-          mv dist/* .
-          rm -rf dist
-          git add .
+          git checkout -b newdist
+          git add --force dist
           git commit -m "Deploy to GitHub Pages 🚀"
-          git push -f origin gh-pages
+          git push -u origin newdist
+          git push origin `git subtree split --prefix dist newdist`:gh-pages --force
+          git push origin --delete newdist

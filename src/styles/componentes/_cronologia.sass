@@ -1,0 +1,130 @@
+// VARIABLES (desde _variables.sass)
+$box-shadow: $form-box-shadow
+$card-height: auto
+$card-width: 45%
+$inner-margin: 15px
+$number-size: 35px
+$outer-margin: 20px
+$marker-size: 9px
+$colors: $color-primario, $color-secundario, $color-acento-contenido
+$timeline: #bdbdbd
+
+// GLOBAL
+*
+  box-sizing: border-box
+
+.cronologia
+  .contenedor
+    position: relative
+    margin: auto
+    @media screen and (min-width: $bp-min-lg)
+      display: flex
+      flex-flow: column wrap
+      height: auto
+      margin: 0 auto
+    &::after
+      z-index: 1
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 50%
+      border-left: 1px solid $timeline
+
+  .tarjeta-evento
+    position: relative
+    display: block
+    margin: 10px auto 80px
+    z-index: 2
+    @media screen and (max-width: $bp-max-md)
+      max-width: 80%
+      box-shadow: $box-shadow
+    @media screen and (max-width: $bp-max-sm)
+      max-width: 90%
+    @media screen and (min-width: $bp-min-lg)
+      max-width: $card-width
+      margin-top: $outer-margin / 2
+      margin-bottom: $outer-margin / 2
+      &:nth-child(odd)
+        margin-right: auto
+        margin-left: 0
+        .tarjeta-titulo::after
+          position: absolute
+          content: ""
+          width: 0
+          height: 0
+          border-top: 15px solid transparent
+          border-bottom: 15px solid transparent
+          border-left: 15px solid
+          left: 100%
+        .tarjeta-titulo::before
+          left: 111%
+          transform: translateX(-50%)
+      &:nth-child(even)
+        margin-left: auto
+        margin-right: 0
+        .tarjeta-titulo::after
+          position: absolute
+          content: ""
+          width: 0
+          height: 0
+          border-top: 15px solid transparent
+          border-bottom: 15px solid transparent
+          border-right: 15px solid
+          right: 100%
+        .tarjeta-titulo::before
+          right: 111%
+          transform: translateX(50%)
+    .tarjeta-titulo
+      position: relative
+      display: flex
+      align-items: center
+      color: #fff
+      font-weight: 400
+      .cajon-numero
+        display: inline
+        float: left
+        margin: $inner-margin
+        padding: 10px
+        font-size: $number-size
+        line-height: $number-size
+        font-weight: 600
+        background: rgba(0, 0, 0, 0.17)
+      h2
+        letter-spacing: 2px
+        margin: 0
+        @media screen and (min-width: $bp-min-sm)
+          font-size: 165%
+        span
+          display: block
+          margin: 0
+      &::before
+        position: absolute
+        content: ""
+        width: $marker-size
+        height: $marker-size
+        background-color: $timeline
+        border-radius: $marker-size
+        top: 50%
+        z-index: 3
+    .tarjeta-cuerpo
+      background: #fff
+      border-top: 0
+      padding: $inner-margin
+      border-radius: 10px
+      @media screen and (min-width: $bp-min-lg)
+        height: $card-height - ($number-size + 50)
+      img
+        display: block
+        width: 100%
+
+    // Estilos de color por paso
+    @for $i from 1 through 20
+      &--paso#{$i}
+        $color: nth($colors, (($i - 1) % length($colors)) + 1)
+        background-color: $color
+        .tarjeta-titulo::after
+          border-left-color: if($i % 2 == 1, $color, transparent) !important
+          border-right-color: if($i % 2 == 0, $color, transparent) !important
+        .tarjeta-cuerpo
+          border: 5px solid $color

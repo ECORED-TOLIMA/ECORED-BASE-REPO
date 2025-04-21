@@ -1,11 +1,11 @@
 import Complementario from 'ecored-pkg-fliz/plugin/components/Complementario.vue'
-import Creditos from 'ecored-pkg-fliz/plugin/components/Creditos.vue'
 import Glosario from 'ecored-pkg-fliz/plugin/components/Glosario.vue'
-import Inicio from 'ecored-pkg-fliz/plugin/components/Inicio.vue'
 import Curso from 'ecored-pkg-fliz/plugin/components/plantilla/Curso.vue'
 import Referencias from 'ecored-pkg-fliz/plugin/components/Referencias.vue'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Creditos from '../components/Creditos.vue'
+import Inicio from '../components/Inicio.vue'
 
 Vue.use(VueRouter)
 

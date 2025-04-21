@@ -1,20 +1,14 @@
 .banner-principal-decorativo
   &-1
-    animation: float1 2.8s ease-in-out infinite alternate
+    animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    left: -25%
+    top: 20%
+    right: 10%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 18%
-    right: -4%
-
-  &-3
-    animation: float1 2.8s ease-in-out infinite alternate
-    position: absolute
     top: 51%
-    right: -12%
+    right: 30%
 
 
 @keyframes float1
@@ -39,3 +33,31 @@ figcaption
 
 .BG03
   background-color: #B5CCAD
+
+//- tarjeta de deslizamiento arriba abajo 
+.tarjetas-up
+  overflow: hidden
+  border-radius: 5px
+  position: relative
+  &_card
+    transition: bottom .3s ease-in-out
+    position: absolute
+    border-radius: 5px
+    width: 100%
+    min-height: auto
+    left: 0
+    bottom: 0%
+    transform: translateY(calc(100% - 3.7rem))
+    padding: 1.5rem
+    i:last-child
+      display: none
+  &:hover
+    .tarjetas-up_card
+      transform: translateY(0)
+    i:first-child
+      display: none
+    i:last-child
+      display: block
+ 
+.barra-avance__boton--regresar span
+  color: #fff !important

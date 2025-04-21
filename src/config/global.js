@@ -1,9 +1,7 @@
 export default {
   global: {
-    Name:
-      'Fundamentos del ciberespacio, la ciberseguridad y los delitos informáticos',
-    Description:
-      'Ese componente formativo establece las bases para comprender el ciberespacio, la ciberseguridad y los delitos informáticos. Se explorarán los conceptos esenciales de la seguridad digital, los riesgos asociados a la navegación en línea y las amenazas cibernéticas más comunes. Además, se analizarán las normativas vigentes y las estrategias de prevención para fortalecer la protección de la información y los sistemas informáticos.',
+    componenteFormativo: 'Nombre del recurso educativo',
+    descripcionCurso: 'Descripción del RED',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -14,10 +12,6 @@ export default {
       {
         clases: ['banner-principal-decorativo-2'],
         imagen: require('@/assets/curso/portada/banner-principal-decorativo-2.svg'),
-      },
-      {
-        clases: ['banner-principal-decorativo-3'],
-        imagen: require('@/assets/curso/portada/banner-principal-decorativo-3.svg'),
       },
     ],
   },
@@ -37,28 +31,13 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Ciberespacio fundamentos y alcance',
+        titulo: 'Titulo_de_primer_nivel',
         desarrolloContenidos: true,
         subMenu: [
-          // {
-          //   numero: '1.1',
-          //   titulo: 'Concepto del ciberespacio',
-          //   hash: 't_1_1',
-          // },
           {
             numero: '1.1',
-            titulo: 'Historia y evolución del ciberespacio',
+            titulo: 'Titulo_de_segundo_nivel',
             hash: 't_1_1',
-          },
-          {
-            numero: '1.2',
-            titulo: 'Características del ciberespacio',
-            hash: 't_1_2',
-          },
-          {
-            numero: '1.3',
-            titulo: 'Tipos de ciberespacio',
-            hash: 't_1_3',
           },
         ],
       },
@@ -66,73 +45,14 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Ciberseguridad principios, normativas e importancia',
+        titulo: 'Titulo_de_primer_nivel',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            numero: '2.1',
-            titulo: 'Concepto e importancia de la ciberseguridad',
-            hash: 't_2_1',
-          },
-          {
-            numero: '2.2',
-            titulo: 'Historia y evolución de la ciberseguridad',
-            hash: 't_2_2',
-          },
-          {
-            numero: '2.3',
-            titulo: 'Características de la ciberseguridad',
-            hash: 't_2_3',
-          },
-          {
-            numero: '2.4',
-            titulo: 'Normas y regulaciones internacionales',
-            hash: 't_2_4',
-          },
-          {
-            numero: '2.5',
-            titulo: 'Retos actuales en ciberseguridad',
-            hash: 't_2_5',
-          },
-        ],
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Delitos informáticos y su impacto',
+        titulo: 'Titulo_de_primer_nivel',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            numero: '3.1',
-            titulo: 'Actores del cibercrimen',
-            hash: 't_3_1',
-          },
-          {
-            numero: '3.2',
-            titulo: 'Tipos de delitos informáticos',
-            hash: 't_3_2',
-          },
-          {
-            numero: '3.3',
-            titulo: 'Delitos informáticos en Colombia y regulación vigente',
-            hash: 't_3_3',
-          },
-          {
-            numero: '3.4',
-            titulo: 'Contexto mundial y tendencias actuales',
-            hash: 't_3_4',
-          },
-          {
-            numero: '3.5',
-            titulo: 'Desafíos globales en la lucha contra el cibercrimen',
-            hash: 't_3_5',
-          },
-          {
-            numero: '3.6',
-            titulo: 'Mecanismos de reporte y prevención',
-            hash: 't_3_6',
-          },
-        ],
       },
     ],
     subMenu: [
