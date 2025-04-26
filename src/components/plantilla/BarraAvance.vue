@@ -362,11 +362,12 @@ export default {
       &:before, &:after
         background-color: $color-acento-botones
 
+
   &__boton
     &--regresar
       background-color: $color-sistema-c
       span
-        color: $color-sistema-a !important
+        color: $color-btn-texto !important
     &--disable
       opacity: 0
       pointer-events: none
