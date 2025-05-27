@@ -1,9 +1,5 @@
 <template lang="pug">
   div.mb-5 
-    .titulo-principal.color-acento-contenido(data-aos="fade-right")
-      .titulo-principal__numero
-        span 1
-      h1 Titulo_de_primer_nivel
         
     .titulo-segundo.color-secundario(data-aos="fade-right")
       h2 1.1  Título de segundo nivel, 24pt
@@ -491,9 +487,6 @@
           img(src='@/assets/template/img-placeholder.svg' alt="Imagen decorativa")
           figcaption Nota. <span style="font-weight: 400">Tomado referencia.</span>
 
-    #imagen_infografica.titulo-segundo.color-acento-botones(data-aos="fade-right")
-      h2 Imagen Infográfica
-
     h3 Imagen Infográfica A
 
     ImagenInfografica.color-secundario.mb-5(data-aos="zoom-in")
@@ -757,6 +750,8 @@
       button.carousel-control-next(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide='next')
         span.carousel-control-next-icon(aria-hidden='true')
         span.visually-hidden Next
+
+    h3 Acordion A
 
     AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul" data-aos="zoom-in")
       .row.justify-content-center(titulo="Titulo item 1")

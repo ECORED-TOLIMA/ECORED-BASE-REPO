@@ -2,7 +2,11 @@
 .curso-main-container.pb-3
   BannerInterno
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
-    
+    .titulo-principal.color-acento-contenido(data-aos="fade-right")
+      .titulo-principal__numero
+        span 1
+      h1 Titulo_de_primer_nivel
+
     //- El componente "Muestras" tiene las aplicaciones de todos los componentes de la base
     //- se encuentra en src/components/Muestras.vue
     //- Una vez el componente "Muestras" no se necesite 

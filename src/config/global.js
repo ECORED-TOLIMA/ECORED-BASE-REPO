@@ -1,7 +1,7 @@
 export default {
   global: {
-    componenteFormativo: 'Nombre del recurso educativo',
-    descripcionCurso: 'Descripción del RED',
+    componenteFormativo: 'Nombre_del_recurso_educativo',
+    descripcionCurso: 'Descripción_del_RED',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -147,15 +147,9 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Juan Carlos Camargo Solano',
-          cargo: 'Experta temática',
-          centro:
-            'Centro Nacional de Hotelería, Turismo y Alimentos - Regional Distrito Capital',
-        },
-        {
-          nombre: 'Viviana Esperanza Herrera Quiñonez',
-          cargo: 'Evaluadora instruccional ',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          nombre: 'Nombre_Experto',
+          cargo: 'Cargo_Experto',
+          centro: 'Regional_Experto',
         },
       ],
     },
