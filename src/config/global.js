@@ -1,7 +1,7 @@
 export default {
   global: {
-    componenteFormativo: 'Nombre_del_recurso_educativo',
-    descripcionCurso: 'Descripción_del_RED',
+    Name: 'Nombre del recurso educativo',
+    Description: 'Descripción del RED',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-principal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -31,12 +31,12 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Titulo_de_primer_nivel',
+        titulo: 'Tema 1',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Titulo_de_segundo_nivel',
+            titulo: 'Subtema 1',
             hash: 't_1_1',
           },
         ],
@@ -45,13 +45,13 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Titulo_de_primer_nivel',
+        titulo: 'Tema 2',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'Titulo_de_primer_nivel',
+        titulo: 'Tema 3',
         desarrolloContenidos: true,
       },
     ],
@@ -102,28 +102,22 @@ export default {
   },
   complementario: [
     {
-      tema: 'Tema_complementario',
-      referencia: 'Referencia_complementario',
-      tipo: 'Tipo_complementario',
-      link: 'Link_complementario',
-    },
-    {
       tema: '',
       referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tipo: 'Sitio web',
+      link: '',
     },
   ],
   glosario: [
     {
-      termino: 'Termino_glosario',
-      significado: 'Significado_glosario',
+      termino: 'Término',
+      significado: 'Definición',
     },
   ],
   referencias: [
     {
-      referencia: 'Nombre_referencias',
-      link: 'Link_referencias',
+      referencia: '',
+      link: '',
     },
   ],
   creditos: [
@@ -131,15 +125,14 @@ export default {
       titulo: 'ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Milady Tatiana Villamil Castellanos',
-          cargo:
-            'Responsable Ecosistema de Recursos Educativos Digitales (RED)',
+          nombre: 'Nombre completo',
+          cargo: 'Responsable del ecosistema',
           centro: 'Dirección General',
         },
         {
-          nombre: 'Diana Rocío Possos Beltrán',
+          nombre: 'Nombre completo',
           cargo: 'Responsable de línea de producción',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          centro: 'Centro XYZ - Regional XYZ',
         },
       ],
     },
@@ -147,9 +140,9 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Nombre_Experto',
-          cargo: 'Cargo_Experto',
-          centro: 'Regional_Experto',
+          nombre: 'Nombre responsable',
+          cargo: 'Nombre del rol',
+          centro: 'Centro XYZ - Regional XYZ',
         },
       ],
     },
@@ -157,29 +150,19 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Oscar Ivan Uribe Ortiz',
-          cargo: 'Diseñador web',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          nombre: 'Nombre responsable',
+          cargo: 'Diseñador de contenidos',
+          centro: 'Centro XYZ - Regional XYZ',
         },
         {
-          nombre: 'Juan Daniel Polanco Muñoz',
-          cargo: 'Diseñador web',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          nombre: 'Nombre responsable',
+          cargo: 'Desarrollador <i>full stack</i>',
+          centro: 'Centro XYZ - Regional XYZ',
         },
         {
-          nombre: 'Diego Fernando Velasco Güiza',
-          cargo: 'Desarrollador Fullstack',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
-        },
-        {
-          nombre: 'Gilberto Junior Rodríguez Rodríguez',
+          nombre: 'Nombre responsable',
           cargo: 'Animador y productor audiovisual',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
-        },
-        {
-          nombre: 'Ernesto Navarro Jaimes',
-          cargo: 'Animador y productor audiovisual',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          centro: 'Centro XYZ - Regional XYZ',
         },
       ],
     },
@@ -187,19 +170,14 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: 'Norma Constanza Morales Cruz',
-          cargo: 'Evaluadora de contenidos inclusivos y accesibles',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          nombre: 'Nombre responsable',
+          cargo: 'Validador y vinculador de recursos educativos digitales',
+          centro: 'Centro XYZ - Regional XYZ',
         },
         {
-          nombre: 'Jorge Bustos Gómez',
-          cargo: 'Validador y vinculador de recursos educativos digitales',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
-        },
-        {
-          nombre: 'Javier Mauricio Oviedo',
-          cargo: 'Validador y vinculador de recursos educativos digitales',
-          centro: 'Centro de Comercio y Servicios - Regional Tolima',
+          nombre: 'Nombre responsable',
+          cargo: 'Evaluador de contenidos inclusivos y accesibles',
+          centro: 'Centro XYZ - Regional XYZ',
         },
       ],
     },

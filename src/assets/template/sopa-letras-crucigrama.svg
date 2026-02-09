@@ -1,73 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146" height="132" viewBox="0 0 146 132">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="Rectángulo_1" data-name="Rectángulo 1" width="58.321" height="58.321" fill="#404040" stroke="#404040" stroke-width="1"/>
-    </clipPath>
-  </defs>
-  <g id="Grupo_31" data-name="Grupo 31" transform="translate(-8 -14)">
-    <path id="blob_4_" data-name="blob(4)" d="M72.394-16.486c5.57,20.461-12.049,45.014-36.375,63.428S-19.452,77.861-41.618,64.789C-63.9,51.717-77.2,13.3-67.194-13.3-57.191-40.016-23.771-54.679,7.261-54,38.293-53.2,66.938-36.833,72.394-16.486Z" transform="translate(78.572 72.02)" fill="#fff0e5"/>
-    <g id="Grupo_25" data-name="Grupo 25" transform="translate(20 14)">
-      <text id="_" data-name="+" transform="matrix(-1, 0, 0, 1, 63, 87)" fill="#ff6b00" font-size="20" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-5.99" y="0">+</tspan></text>
-      <text id="_2" data-name="+" transform="matrix(-1, 0, 0, 1, 123, 103)" fill="#ff6b00" font-size="20" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-5.99" y="0">+</tspan></text>
-      <text id="_3" data-name="+" transform="matrix(-1, 0, 0, 1, 43, 19)" fill="#ff6b00" font-size="20" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-5.99" y="0">+</tspan></text>
-      <circle id="Elipse_1" data-name="Elipse 1" cx="4" cy="4" r="4" transform="translate(125 22)" fill="#ff6b00"/>
-      <circle id="Elipse_2" data-name="Elipse 2" cx="4" cy="4" r="4" transform="translate(98 115)" fill="#ff6b00"/>
-      <circle id="Elipse_5" data-name="Elipse 5" cx="4" cy="4" r="4" transform="translate(22 111)" fill="#ff6b00"/>
-      <circle id="Elipse_6" data-name="Elipse 6" cx="10" cy="10" r="10" transform="translate(73 10)" fill="#ff6b00" opacity="0.1"/>
-      <circle id="Elipse_7" data-name="Elipse 7" cx="10" cy="10" r="10" transform="translate(10 76)" fill="#ff6b00" opacity="0.1"/>
-      <circle id="Elipse_11" data-name="Elipse 11" cx="7" cy="7" r="7" transform="translate(0 2)" fill="#ff6b00" opacity="0.1"/>
-      <circle id="Elipse_12" data-name="Elipse 12" cx="7" cy="7" r="7" transform="translate(120 118)" fill="#ff6b00" opacity="0.1"/>
-      <circle id="Elipse_8" data-name="Elipse 8" cx="10" cy="10" r="10" transform="translate(76 105)" fill="#ff6b00" opacity="0.1"/>
-      <g id="Elipse_3" data-name="Elipse 3" transform="translate(26 72)" fill="none" stroke="#ff6b00" stroke-width="2">
-        <circle cx="4" cy="4" r="4" stroke="none"/>
-        <circle cx="4" cy="4" r="3" fill="none"/>
-      </g>
-      <g id="Elipse_4" data-name="Elipse 4" transform="translate(119 52)" fill="none" stroke="#ff6b00" stroke-width="2">
-        <circle cx="4" cy="4" r="4" stroke="none"/>
-        <circle cx="4" cy="4" r="3" fill="none"/>
-      </g>
-    </g>
-    <g id="Grupo_21" data-name="Grupo 21">
-      <g id="Rectángulo_2" data-name="Rectángulo 2" transform="translate(38 35)" fill="#fff" stroke="#404040" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-        <rect width="27" height="27" stroke="none"/>
-        <rect x="1.5" y="1.5" width="24" height="24" fill="none"/>
-      </g>
-      <g id="Rectángulo_5" data-name="Rectángulo 5" transform="translate(38 83)" fill="#fff" stroke="#404040" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-        <rect width="27" height="26" stroke="none"/>
-        <rect x="1.5" y="1.5" width="24" height="23" fill="none"/>
-      </g>
-      <g id="Rectángulo_6" data-name="Rectángulo 6" transform="translate(62 59)" fill="#fff" stroke="#404040" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-        <rect width="27" height="27" stroke="none"/>
-        <rect x="1.5" y="1.5" width="24" height="24" fill="none"/>
-      </g>
-      <g id="Rectángulo_7" data-name="Rectángulo 7" transform="translate(86 59)" fill="#fff" stroke="#404040" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-        <rect width="26" height="27" stroke="none"/>
-        <rect x="1.5" y="1.5" width="23" height="24" fill="none"/>
-      </g>
-      <g id="Rectángulo_3" data-name="Rectángulo 3" transform="translate(38 59)" fill="#fff" stroke="#404040" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-        <rect width="27" height="27" stroke="none"/>
-        <rect x="1.5" y="1.5" width="24" height="24" fill="none"/>
-      </g>
-      <g id="Rectángulo_4" data-name="Rectángulo 4" transform="translate(38 106)" fill="#fff" stroke="#404040" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-        <rect width="27" height="27" stroke="none"/>
-        <rect x="1.5" y="1.5" width="24" height="24" fill="none"/>
-      </g>
-      <path id="Trazado_45" data-name="Trazado 45" d="M4.247-6.935A3.729,3.729,0,0,1,6.033-5.691a3.265,3.265,0,0,1,.646,2.043A3.066,3.066,0,0,1,5.273-.95,7.254,7.254,0,0,1,1.207,0H-5.975V-13.3h6.8A6.683,6.683,0,0,1,4.7-12.36a2.952,2.952,0,0,1,1.33,2.537,3.16,3.16,0,0,1-.465,1.7A3.255,3.255,0,0,1,4.247-6.935Zm-6.5-3.648v2.565H.333q1.9,0,1.9-1.292,0-1.273-1.9-1.273ZM.9-2.717q1.976,0,1.976-1.349T.9-5.415H-2.251v2.7Z" transform="translate(50.976 126.3)" fill="#404040"/>
-      <path id="Trazado_46" data-name="Trazado 46" d="M2.774-2.584H-2.85L-3.895,0H-7.733l5.871-13.3h3.7L7.733,0H3.819Zm-1.1-2.774L-.038-9.614l-1.71,4.256Z" transform="translate(51.733 79.3)" fill="#404040"/>
-      <path id="Trazado_47" data-name="Trazado 47" d="M2.774-2.584H-2.85L-3.895,0H-7.733l5.871-13.3h3.7L7.733,0H3.819Zm-1.1-2.774L-.038-9.614l-1.71,4.256Z" transform="translate(52 79)" fill="#404040"/>
-    </g>
-    <g id="Grupo_22" data-name="Grupo 22" transform="translate(4 26.097)">
-      <path id="Trazado_40" data-name="Trazado 40" d="M905.655,93.858l3.785-11.922s41.979-44.133,43.3-44.28a41.508,41.508,0,0,1,4.382,0l4.731,4.731v4.731l-44.28,43.144Z" transform="translate(-830 5)" fill="#fff"/>
-      <g id="Grupo_14" data-name="Grupo 14" transform="translate(74 41.742)">
-        <g id="Grupo_8" data-name="Grupo 8" transform="translate(0 0.001)" clip-path="url(#clip-path)">
-          <path id="Trazado_35" data-name="Trazado 35" d="M12.435,53.148a1.107,1.107,0,0,1-.78-.323L3.5,44.667a1.107,1.107,0,0,1,0-1.563L40.088,6.512a1.135,1.135,0,0,1,1.562,0l8.159,8.159a1.1,1.1,0,0,1,0,1.562L13.217,52.826a1.108,1.108,0,0,1-.781.323m-6.6-9.263,6.6,6.6,35.03-35.032-6.6-6.6Z" transform="translate(0.677 1.323)" fill="#404040" stroke="#404040" stroke-width="1"/>
-          <path id="Trazado_36" data-name="Trazado 36" d="M43.431,18a1.1,1.1,0,0,1-.78-.324L33.064,8.092a1.107,1.107,0,0,1,0-1.563l3.449-3.447a1.138,1.138,0,0,1,1.562,0l9.586,9.587a1.1,1.1,0,0,1,0,1.562l-3.447,3.447a1.1,1.1,0,0,1-.781.324M35.407,7.31l8.024,8.026,1.887-1.886L37.293,5.425Z" transform="translate(6.988 0.591)" fill="#404040" stroke="#404040" stroke-width="1"/>
-          <path id="Trazado_37" data-name="Trazado 37" d="M45.433,14.431a1.1,1.1,0,0,1-.78-.323l-8.16-8.159a1.107,1.107,0,0,1,0-1.563L39.68,1.2a4.1,4.1,0,0,1,5.794,0L49.4,5.127a4.1,4.1,0,0,1,0,5.794l-3.186,3.188a1.106,1.106,0,0,1-.781.323m-6.6-9.263,6.6,6.6,2.406-2.406a1.888,1.888,0,0,0,0-2.671L43.913,2.762a1.935,1.935,0,0,0-2.671,0Z" transform="translate(7.72 -0.001)" fill="#404040" stroke="#404040" stroke-width="1"/>
-          <path id="Trazado_38" data-name="Trazado 38" d="M1.1,50.565A1.1,1.1,0,0,1,.052,49.123L3.9,37.115a1.1,1.1,0,0,1,1.832-.444l8.16,8.159a1.105,1.105,0,0,1-.444,1.833L1.442,50.511a1.082,1.082,0,0,1-.337.053M5.452,39.513,2.81,47.753l8.24-2.642Z" transform="translate(0 7.757)" fill="#404040" stroke="#404040" stroke-width="1"/>
-          <path id="Trazado_39" data-name="Trazado 39" d="M7.638,48.355a1.1,1.1,0,0,1-.781-1.886L43.451,9.876a1.1,1.1,0,0,1,1.56,1.562L8.419,48.031a1.1,1.1,0,0,1-.78.324" transform="translate(1.394 2.038)" fill="#404040" stroke="#404040" stroke-width="1"/>
-        </g>
-      </g>
-    </g>
-    <path id="Trazado_48" data-name="Trazado 48" d="M-14.95-2.72h-5.92L-21.97,0h-4.04l6.18-14h3.9l6.2,14h-4.12Zm-1.16-2.92-1.8-4.48-1.8,4.48ZM4.95-7.3A3.925,3.925,0,0,1,6.83-5.99a3.437,3.437,0,0,1,.68,2.15A3.228,3.228,0,0,1,6.03-1,7.635,7.635,0,0,1,1.75,0H-5.81V-14H1.35a7.035,7.035,0,0,1,4.08.99,3.107,3.107,0,0,1,1.4,2.67,3.326,3.326,0,0,1-.49,1.79A3.427,3.427,0,0,1,4.95-7.3Zm-6.84-3.84v2.7H.83q2,0,2-1.36,0-1.34-2-1.34ZM1.43-2.86q2.08,0,2.08-1.42T1.43-5.7H-1.89v2.84ZM19.35.28A8.285,8.285,0,0,1,15.4-.65a6.954,6.954,0,0,1-2.75-2.59,7.143,7.143,0,0,1-1-3.76,7.143,7.143,0,0,1,1-3.76,6.954,6.954,0,0,1,2.75-2.59,8.285,8.285,0,0,1,3.95-.93,8.478,8.478,0,0,1,3.46.68,6.657,6.657,0,0,1,2.56,1.96L22.85-9.36A4.145,4.145,0,0,0,19.55-11a4.073,4.073,0,0,0-2.03.5,3.47,3.47,0,0,0-1.38,1.41A4.339,4.339,0,0,0,15.65-7a4.339,4.339,0,0,0,.49,2.09A3.47,3.47,0,0,0,17.52-3.5a4.073,4.073,0,0,0,2.03.5,4.145,4.145,0,0,0,3.3-1.64l2.52,2.28A6.657,6.657,0,0,1,22.81-.4,8.478,8.478,0,0,1,19.35.28Z" transform="translate(95 54)" fill="#404040"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 146 132" style="enable-background:new 0 0 146 132;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BBEDF7;}
+	.st1{fill:#FF6B00;}
+	.st2{fill:#99D9E3;enable-background:new    ;}
+	.st3{fill:none;}
+	.st4{enable-background:new    ;}
+	.st5{fill:#39A900;}
+	.st6{fill:#FFFFFF;}
+	.st7{fill:#404040;}
+	.st8{fill:#00314D;}
+</style>
+<g>
+	<path id="blob_4_" class="st0" d="M143,41.5c5.6,20.5-12,45-36.4,63.4S51.1,135.9,29,122.8C6.7,109.7-6.6,71.3,3.4,44.7
+		C13.4,18,46.8,3.3,77.8,4C108.9,4.8,137.5,21.2,143,41.5z"/>
+	<circle id="Elipse_5" class="st1" cx="38" cy="115" r="4"/>
+	<g>
+		<g>
+			<circle id="Elipse_6_00000127036690462434594310000003475896893655987109_" class="st2" cx="95" cy="20" r="10"/>
+			<circle id="Elipse_7_00000055707406526376212930000015495393550097491889_" class="st2" cx="32" cy="86" r="10"/>
+			<circle id="Elipse_11_00000045613723299079505510000006308847763036546953_" class="st2" cx="19" cy="9" r="7"/>
+			<circle id="Elipse_12_00000158017481921279479400000002163531487760094092_" class="st2" cx="139" cy="125" r="7"/>
+			<circle id="Elipse_8_00000116949687578485552370000013759383668323071414_" class="st2" cx="98" cy="115" r="10"/>
+		</g>
+	</g>
+	<g id="Elipse_3" transform="translate(26 72)">
+		<circle class="st3" cx="16" cy="4" r="4"/>
+		<path class="st1" d="M16,8c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S18.2,8,16,8z M16,2c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2
+			S17.1,2,16,2z"/>
+	</g>
+	<g>
+		<g class="st4">
+			<path class="st5" d="M73.8,84.8v-3.6h-3.5v-2.5h3.5v-3.6h2.8v3.6H80v2.5h-3.5v3.6H73.8z"/>
+		</g>
+		<g class="st4">
+			<path class="st5" d="M133.8,100.8v-3.6h-3.5v-2.5h3.5v-3.6h2.8v3.6h3.5v2.5h-3.5v3.6H133.8z"/>
+		</g>
+		<g class="st4">
+			<path class="st5" d="M53.8,16.8v-3.6h-3.5v-2.5h3.5V7.2h2.8v3.6H60v2.5h-3.5v3.6H53.8z"/>
+		</g>
+		<circle id="Elipse_1" class="st5" cx="141" cy="26" r="4"/>
+		<circle id="Elipse_2" class="st5" cx="114" cy="119" r="4"/>
+		<g id="Elipse_4" transform="translate(119 52)">
+			<circle class="st5" cx="16" cy="4" r="4"/>
+			<path class="st5" d="M16,8c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4S18.2,8,16,8z M16,2c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2
+				S17.1,2,16,2z"/>
+		</g>
+	</g>
+	<g>
+		<rect x="30" y="21" class="st6" width="27" height="27"/>
+		<rect x="30" y="69" class="st6" width="27" height="26"/>
+		<rect x="54" y="45" class="st6" width="27" height="27"/>
+		<rect x="78" y="45" class="st6" width="26" height="27"/>
+		<rect x="30" y="45" class="st6" width="27" height="27"/>
+		<path class="st7" d="M55.5,72h-24c-0.8,0-1.5-0.7-1.5-1.5v-24c0-0.8,0.7-1.5,1.5-1.5h24c0.8,0,1.5,0.7,1.5,1.5v24
+			C57,71.3,56.3,72,55.5,72z M33,69h21V48H33V69z"/>
+		<rect x="30" y="92" class="st6" width="27" height="27"/>
+		<path class="st8" d="M102.5,45h-23H57V22.5c0-0.8-0.7-1.5-1.5-1.5h-24c-0.8,0-1.5,0.7-1.5,1.5v24c0,0.8,0.7,1.5,1.5,1.5H54v21
+			H31.5c-0.8,0-1.5,0.7-1.5,1.5v23v24c0,0.8,0.7,1.5,1.5,1.5h24c0.8,0,1.5-0.7,1.5-1.5v-24V72h22.5h23c0.8,0,1.5-0.7,1.5-1.5v-24
+			C104,45.7,103.3,45,102.5,45z M33,24h21v21H33V24z M33,72h21v20H33V72z M54,116H33V95h21V116z M57,48h21v21H57V48z M101,69H81V48
+			h20V69z"/>
+		<path id="Trazado_45" class="st8" d="M47.2,105.4c0.7,0.2,1.3,0.7,1.8,1.2c0.4,0.6,0.7,1.3,0.6,2c0,1.1-0.5,2.1-1.4,2.7
+			c-1.2,0.7-2.6,1-4.1,0.9H37V99h6.8c1.4-0.1,2.7,0.2,3.9,0.9c0.9,0.6,1.4,1.5,1.3,2.5c0,0.6-0.2,1.2-0.5,1.7
+			C48.2,104.7,47.8,105.1,47.2,105.4z M40.7,101.7v2.6h2.6c1.3,0,1.9-0.4,1.9-1.3c0-0.8-0.6-1.3-1.9-1.3H40.7z M43.9,109.6
+			c1.3,0,2-0.4,2-1.3c0-0.9-0.7-1.3-2-1.3h-3.2v2.7L43.9,109.6z"/>
+		<path id="Trazado_46" class="st7" d="M46.5,62.7h-5.6l-1,2.6H36L41.9,52h3.7l5.9,13.3h-3.9L46.5,62.7z M45.4,59.9l-1.7-4.3
+			L42,59.9L45.4,59.9z"/>
+		<path id="Trazado_47" class="st8" d="M46.8,62.4h-5.6l-1,2.6h-3.8l5.9-13.3h3.7L51.7,65h-3.9L46.8,62.4z M45.7,59.6L44,55.4
+			l-1.7,4.3L45.7,59.6z"/>
+		<path id="Trazado_40" class="st6" d="M71.7,111L75.4,99c0,0,42-44.1,43.3-44.3c1.5-0.1,2.9-0.1,4.4,0l4.7,4.7v4.7l-44.3,43.1
+			L71.7,111z"/>
+		<path class="st8" d="M127.5,58.6l-3.9-3.9c-1.8-1.8-4.7-1.8-6.5,0l-2.1,2.1c-0.6-0.2-1.3-0.1-1.8,0.3l-3.4,3.4
+			c-0.5,0.5-0.6,1.2-0.3,1.8L73.8,97.9c0,0,0,0,0,0c-0.1,0.1-0.1,0.1-0.2,0.2c0,0,0,0,0,0c-0.1,0.1-0.1,0.2-0.1,0.3c0,0,0,0,0,0
+			c0,0,0,0.1,0,0.1l-3.8,12c-0.1,0.2-0.1,0.3-0.1,0.5c0,0.9,0.7,1.6,1.6,1.6c0,0,0,0,0,0l0-0.5l0,0v0.5c0.2,0,0.3,0,0.5-0.1l12-3.8
+			c0,0,0,0,0,0c0.1,0,0.2-0.1,0.2-0.1c0,0,0,0,0.1,0c0.1-0.1,0.2-0.1,0.3-0.2l35.5-35.5c0.2,0.1,0.4,0.1,0.6,0.1v-0.5h0l0,0l0,0.5
+			c0,0,0,0,0,0c0.4,0,0.8-0.2,1.1-0.5L125,69c0.5-0.5,0.6-1.2,0.3-1.8l2.1-2.1C129.3,63.3,129.3,60.4,127.5,58.6z M113.1,61.7
+			l1.2-1.2l7.3,7.3l-1.2,1.2L113.1,61.7z M113.4,66.5L79,100.9L77.2,99l34.3-34.3L113.4,66.5z M77.9,104.2
+			C77.9,104.2,77.9,104.3,77.9,104.2C77.9,104.3,77.9,104.3,77.9,104.2l2.3,2.3l-6.5,2.1l2.1-6.5L77.9,104.2z M81.3,103.1l34.3-34.3
+			l1.8,1.8l-34.3,34.3L81.3,103.1z M117.3,59l2-2c0.6-0.5,1.4-0.5,2,0l3.9,3.9c0.3,0.3,0.4,0.6,0.4,1c0,0.4-0.1,0.7-0.4,1l-2,2.1
+			L117.3,59z"/>
+		<path id="Trazado_48" class="st8" d="M72.1,37.3h-5.9L65,40h-4l6.2-14h3.9l6.2,14h-4.1L72.1,37.3z M70.9,34.4l-1.8-4.5l-1.8,4.5
+			H70.9z M91.9,32.7c0.7,0.2,1.4,0.7,1.9,1.3c0.5,0.6,0.7,1.4,0.7,2.1c0,1.1-0.5,2.2-1.5,2.8c-1.3,0.7-2.8,1.1-4.3,1h-7.6V26h7.2
+			c1.4-0.1,2.9,0.3,4.1,1c0.9,0.6,1.4,1.6,1.4,2.7c0,0.6-0.2,1.3-0.5,1.8C93,32,92.5,32.4,91.9,32.7z M85.1,28.9v2.7h2.7
+			c1.3,0,2-0.5,2-1.4c0-0.9-0.7-1.3-2-1.3H85.1z M88.4,37.1c1.4,0,2.1-0.5,2.1-1.4s-0.7-1.4-2.1-1.4h-3.3v2.8H88.4z M106.3,40.3
+			c-1.4,0-2.7-0.3-3.9-0.9c-1.1-0.6-2.1-1.5-2.8-2.6c-0.7-1.1-1-2.4-1-3.8c0-1.3,0.3-2.6,1-3.8c0.7-1.1,1.6-2,2.8-2.6
+			c1.2-0.6,2.6-1,3.9-0.9c1.2,0,2.4,0.2,3.5,0.7c1,0.4,1.9,1.1,2.6,2l-2.5,2.3c-0.8-1-2-1.6-3.3-1.6c-0.7,0-1.4,0.2-2,0.5
+			c-0.6,0.3-1.1,0.8-1.4,1.4c-0.3,0.6-0.5,1.4-0.5,2.1c0,0.7,0.2,1.4,0.5,2.1c0.3,0.6,0.8,1.1,1.4,1.4c0.6,0.3,1.3,0.5,2,0.5
+			c1.3,0,2.5-0.6,3.3-1.6l2.5,2.3c-0.7,0.9-1.6,1.5-2.6,2C108.7,40.1,107.5,40.3,106.3,40.3z"/>
+	</g>
+</g>
 </svg>

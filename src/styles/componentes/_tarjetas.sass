@@ -25,6 +25,7 @@
     background-color: $color-sistema-h
     cursor: pointer
     transition: background-color 0.3s ease-in-out
+
     &.color-primario
       &:active, &:focus, &:hover
         background-color: $color-primario
@@ -97,6 +98,7 @@
     display: block
     width: $tarjeta-avatar-ancho-img
     margin: 0 auto
+
   .tarjeta
     display: inline-block
     padding-top: 60px !important
@@ -104,12 +106,14 @@
 
 .tarjeta-avatar-b
   display: flex
+
   &__img
     min-width: $tarjeta-avatar-b-ancho-img
     max-width: $tarjeta-avatar-b-ancho-img
     position: relative
     display: flex
     align-items: center
+
   .tarjeta
     width: 100%
     margin-left: - $tarjeta-avatar-b-ancho-img / 2
@@ -134,6 +138,7 @@
       left: 50%
       top: 50%
       transform: translate(-50%, -50%)
+
   &.color-primario
     border-color: $color-primario
     .tarjeta-numerada__numero
@@ -163,19 +168,23 @@
   background-color: transparent !important
   perspective: 1000px
   height: 100%
+
   &.tarjeta
     .tarjeta-flip__img, .tarjeta-flip__contenido
       border-radius: 20px
       overflow: hidden
+
   &__contenedor
     position: relative
     width: 100%
     height: 100%
     transition: transform 0.5s ease-in-out
     transform-style: preserve-3d
+
   &:hover 
     .tarjeta-flip__contenedor
       transform: rotateY(180deg)
+
   &__img, &__contenido
     -webkit-backface-visibility: hidden
     backface-visibility: hidden
@@ -187,6 +196,7 @@
   &__contenido
     transform: rotateY(180deg)
     height: 100%
+
   &.color-primario
     .tarjeta-flip__img
       background-color: $color-primario
@@ -212,6 +222,7 @@
       background-color: $color-acento-botones
       color: textColor($color-acento-botones)
 
+
 .tarjeta-slide
   height: 100%
   position: relative
@@ -223,38 +234,47 @@
     background-position: center
     transform: translate(0,0)
     transition: transform 0.3s ease-in-out
+  
+
   &.arriba
     &:hover
       .tarjeta-slide
         &__img
           transform: translate(0,-100%)
+
   &.abajo
     &:hover
       .tarjeta-slide
         &__img
           transform: translate(0,100%)
+
   &.izquierda
     &:hover
       .tarjeta-slide
         &__img
           transform: translate(-100%,0)
+
   &.derecha
     &:hover
       .tarjeta-slide
         &__img
           transform: translate(100%,0)
+
   &.color-primario
     .tarjeta-slide
       &__img
         background-color: $color-primario
+
   &.color-secundario
     .tarjeta-slide
       &__img
         background-color: $color-secundario
+
   &.color-acento-contenido
     .tarjeta-slide
       &__img
         background-color: $color-acento-contenido
+
   &.color-acento-botones
     .tarjeta-slide
       &__img
@@ -275,28 +295,3 @@
       flex: 1
       display: flex
       justify-content: center
-
-// Tarjeta deslizamiento arriba - abajo 
-.tarjetas-up
-  overflow: hidden
-  border-radius: 5px
-  position: relative
-  &__card
-    transition: bottom .3s ease-in-out
-    position: absolute
-    border-radius: 5px
-    width: 100%
-    min-height: auto
-    left: 0
-    bottom: 0%
-    transform: translateY(calc(100% - 3.7rem))
-    padding: 1.5rem
-    i:last-child
-      display: none
-  &:hover
-    .tarjetas-up__card
-      transform: translateY(0)
-    i:first-child
-      display: none
-    i:last-child
-      display: block
